@@ -3,6 +3,56 @@
 @import url("./layout.css");
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Monoton|Roboto&display=swap");
 
+
+/* MAIN SECTION */
+
+main {
+  padding: 1.5rem;
+  min-height: calc(100vh - 88px); 
+}
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem;
+      transition: all 0.5s ease-out; }
+      main .icons a:hover {
+        color: #eece1a; }
+        main .icons i:hover {
+          color: #eece1a; }
+      
+
+  main#home {
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-image: url("./img/background.jpeg");
+  }
+
+  main#home::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .6;
+    background: rgba(0,0,0,0.9);  
+    }
+
+    main#home h1 {
+      margin-top: 20vh;
+      position: relative;
+     }
+
+     li a:hover {
+      color: #eece1a; }
+
+.hobby {
+  overflow: hidden;
+  text-align: center;
+  padding: 0rem 2rem; }
+  
 .image {
   width: 500px;
   height: 500px;
@@ -181,50 +231,10 @@ header {
   padding: .5rem;
   margin-top: 1.7rem;
   color: #dbdb30; }
-
+  
 .menuPlus {
   padding: 1rem;
   margin: 1rem; }
-
-main {
-  padding: 1.5rem;
-  min-height: calc(100vh - 87px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem;
-      transition: all 0.5s ease-out; }
-      main .icons a:hover {
-        color: #eece1a; }
-
-  main#home {
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    background-image: url("./img/background.jpeg");
-  }
-
-  main#home::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: .6;
-    background: rgba(0,0,0,0.9);  
-    }
-
-    main#home h1 {
-      margin-top: 20vh;
-      position: relative;
-     }
-
-.hobby {
-  overflow: hidden;
-  text-align: center;
-  padding: 0rem 2rem; }
 
 .about-info {
   display: grid;

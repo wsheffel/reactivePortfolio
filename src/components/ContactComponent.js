@@ -5,7 +5,7 @@ const Contact = () => {
     <main id="contact">
       <h1 className="lg-heading">
         Contact
-        <span className="text-secondary">Me</span>
+        <i className="text-secondary"> Me</i>
       </h1>
       <h2 className="sm-heading">
         This is how you can reach me:

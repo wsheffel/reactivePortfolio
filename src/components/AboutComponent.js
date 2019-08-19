@@ -7,7 +7,7 @@ const About = () => {
       <main id="about">
         <h1 className="lg-heading">
           About
-          <span className="text-secondary">Me</span>
+          <i className="text-secondary"> Me</i>
         </h1>
         <h2 className="sm-heading">
           A brief insight into the complex, but pleasant person that makes me
@@ -99,44 +99,44 @@ const About = () => {
             </h5>
             <ul>
               <li>
-                <b className="text-secondary">HTML5</b>
+                <b className="text-secondary">HTML5 </b>
                 <i>[static or/ and with advanced apps]</i>
               </li>
               <li>
-                <b className="text-secondary">CSS3</b>
+                <b className="text-secondary">CSS3 </b>
                 <i>
                   [incl. <b>SASS</b>➖like this particular site]
-                  <span className="text-secondary">:)</span>
+                  <span className="text-secondary"> :)</span>
                 </i>
               </li>
               <li>
-                <b className="text-secondary">JavaScript</b>
+                <b className="text-secondary">JavaScript </b>
                 <i>
-                  [Proficient with vailla <b>ES6+</b>]
+                  [Proficient with vanilla <b>ES6+</b>]
                 </i>
               </li>
               <li>
-                <b className="text-secondary">React 16</b>
-                <i>[with Context API & React-Router 4]</i>
+                <b className="text-secondary">React 16 </b>
+                <i>[w/ Context API, Hooks & React-Router]</i>
               </li>
               <li>
-                <b className="text-secondary">Redux</b>
+                <b className="text-secondary">Redux </b>
                 <i>[for a better state management]</i>
               </li>
               <li>
-                <b className="text-secondary">NodeJS</b>
+                <b className="text-secondary">NodeJS </b>
                 <i>
-                  [mostly with <b>Express</b> and <b>SailsJS </b>too]
+                  [mostly with <b>Express</b> & <b>SailsJS </b>too]
                 </i>
               </li>
               <li>
-                <b className="text-secondary">MongoDB</b>
+                <b className="text-secondary">MongoDB </b>
                 <i>
-                  [nativ or/ and with <b>Mongoose</b>]
+                  [natively or/ and with <b>Mongoose</b>]
                 </i>
               </li>
               <li>
-                <b className="text-secondary">Bootstrap 4</b>
+                <b className="text-secondary">Bootstrap 4 </b>
                 <i>
                   [great with <b>MaterializeCSS</b> too]
                 </i>
@@ -151,35 +151,35 @@ const About = () => {
             </h5>
             <ul>
               <li>
-                <b className="text-secondary">Git</b>
+                <b className="text-secondary">Git </b>
                 <i>[as my version control system]</i>
               </li>
               <li>
-                <b className="text-secondary">jQuery</b>
+                <b className="text-secondary">jQuery </b>
                 <i>[as the main helper library]</i>
               </li>
               <li>
-                <b className="text-secondary">Webpack</b>{" "}
+                <b className="text-secondary">Webpack </b>{" "}
                 <i>[for module bundling]</i>
               </li>
               <li>
-                <b className="text-secondary">Gulp</b>
+                <b className="text-secondary">Gulp </b>
                 <i>[when a task runner is required]</i>
               </li>
               <li>
-                <b className="text-secondary">Postman</b>
+                <b className="text-secondary">Postman </b>
                 <i>[as my API development/ testing tool]</i>
               </li>
               <li>
-                <b className="text-secondary">Loadash</b>
+                <b className="text-secondary">Loadash </b>
                 <i>[often required as my helper library]</i>
               </li>
               <li>
-                <b className="text-secondary">Mocha</b>
+                <b className="text-secondary">Mocha </b>
                 <i>[whenever testing is mandatory]</i>
               </li>
               <li>
-                <b className="text-secondary">EJS/ HBS</b>
+                <b className="text-secondary">EJS/ HBS </b>
                 <i>[when all focuse is on the backend]</i>
               </li>
             </ul>

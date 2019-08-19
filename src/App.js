@@ -1,14 +1,12 @@
 import React, { Fragment } from "react";
-import "./App.css";
-
-import Home from "./components/Home";
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/HomeComponent";
+import About from "./components/AboutComponent";
+import Work from "./components/WorkComponent";
+import Contact from "./components/ContactComponent";
+import Footer from "./components/FooterComponent";
+import Navbar from "./components/NavbarComponent";
+import "./App.css";
 
 function App() {
   return (

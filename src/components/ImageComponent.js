@@ -5,14 +5,20 @@ class ImageComponent extends Component {
   state = { isOpen: false };
 
   handleShowDialog = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-    console.log("cliked");
+    this.setState(prevState => ({
+      isOpen: !prevState.isOpen
+    }));
   };
 
   render() {
     return (
       <Fragment>
-        <img src={this.props.img} onClick={this.handleShowDialog} alt="" />
+        <img
+          style={{ cursor: "pointer" }}
+          src={this.props.img}
+          onClick={this.handleShowDialog}
+          alt={this.props.title}
+        />
         <Modal
           visible={this.state.isOpen}
           effect="fadeInUp"
@@ -22,7 +28,7 @@ class ImageComponent extends Component {
             className="image"
             src={this.props.img}
             onClick={this.handleShowDialog}
-            alt=""
+            alt={this.props.title}
           />
         </Modal>
       </Fragment>

@@ -6,9 +6,7 @@ const Home = () => {
       <main id="home">
         <h1 className="lg-heading hobby">
           Dzenis
-          <span className="text-secondary" style={{ marginLeft: ".5rem" }}>
-            H.
-          </span>
+          <i className="text-secondary"> H.</i>
         </h1>
         <h2 className="hobby">
           <i>

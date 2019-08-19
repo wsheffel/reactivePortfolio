@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
-// import ModalImage from "react-modal-image";
 import ImageComponent from "./ImageComponent";
 
 import p1 from "../img/projects/p1.JPG";
@@ -17,6 +16,8 @@ import p11 from "../img/projects/p11.jpg";
 import p12 from "../img/projects/p12.jpg";
 import p13 from "../img/projects/p13.jpg";
 import p14 from "../img/projects/p14.jpg";
+import p15 from "../img/projects/p15.png";
+import p16 from "../img/projects/p16.png";
 
 class Work extends Component {
   constructor() {
@@ -37,7 +38,7 @@ class Work extends Component {
         <main id="work">
           <h1 className="lg-heading">
             My
-            <span className="text-secondary">Work</span>
+            <i className="text-secondary"> Work</i>
           </h1>
 
           <ModalVideo
@@ -154,21 +155,17 @@ class Work extends Component {
                 <a
                   href="#!"
                   id="video"
-                  className="iconsPlus icons"
+                  className="icons"
                   onClick={this.openVideoModal}
                 >
-                  <i className="fab fa-youtube fa-2x"> </i>
-                  Watch Live Preview
+                  <i className="fab fa-youtube fa-2x" />
+                  Watch Video Preview
                 </a>
               </li>
 
               <li style={{ listStyleType: "none" }}>
-                <a
-                  href="../dox/Local_Setup.docx"
-                  className="iconsPlus icons"
-                  download
-                >
-                  <i className="fas fa-download fa-2x" /> Download instructions
+                <a href="../dox/Local_Setup.docx" className="icons" download>
+                  <i className="fas fa-download fa-2x" /> Download Instructions
                 </a>
               </li>
             </ul>
@@ -229,9 +226,71 @@ class Work extends Component {
             </div>
 
             <div className="item">
+              <ImageComponent img={p15} title="reactive-rss" />
+              <a
+                href="https://reactive-rss-d3f9c.web.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/Reactive-RSS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="idea-x"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>reactiveRSS</b>
+                </span>
+                <br />
+                Great way to add, save, edit, delete, follow your RSS feeds 📰
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p16} title="iZEN" />
+              <a
+                href="https://izen-250312.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/iZEN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="idea-x"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>iZEN</b>
+                </span>
+                <br />
+                Nice relaxing sounds & visuals to help you relax 🧘‍
+              </p>
+            </div>
+
+            <div className="item">
               <ImageComponent img={p3} title="idea-x" />
               <a
-                href="https://idea-x.herokuapp.com/"
+                href="https://idea-x.herokuapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -258,6 +317,7 @@ class Work extends Component {
                 Ideas for your next coding project 💡
               </p>
             </div>
+
             <div className="item">
               <ImageComponent img={p2} title="Bigga File Uploads" />
               <a
@@ -322,7 +382,7 @@ class Work extends Component {
             <div className="item">
               <ImageComponent img={p6} title="reactive_movies" />
               <a
-                href="https://rubicon-movies.herokuapp.com/"
+                href="https://reactive-movies.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -353,7 +413,7 @@ class Work extends Component {
             <div className="item">
               <ImageComponent
                 img={p7}
-                title="It's a full stack app that uses a enormous tech stack -> My versoion of SO :)"
+                title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
               />
               <a
                 href="https://dev-nexup.herokuapp.com/"
