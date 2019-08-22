@@ -18,6 +18,8 @@ import p13 from "../img/projects/p13.jpg";
 import p14 from "../img/projects/p14.jpg";
 import p15 from "../img/projects/p15.png";
 import p16 from "../img/projects/p16.png";
+import p17 from "../img/projects/p17.png";
+import p18 from "../img/projects/p18.jpg";
 
 class Work extends Component {
   constructor() {
@@ -60,7 +62,7 @@ class Work extends Component {
                 <i className="fas fa-eye" /> Live preview
               </a>
               <a
-                href="https://github.com/BiggaHD/Automated-Accountant"
+                href="https://github.com/BiggaHD/Mars-EMS"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-dark"
@@ -177,7 +179,7 @@ class Work extends Component {
                 under)
               </h3>
               <small className="text-info">
-                <b className="text-secondary">NOTE:</b>
+                <b className="text-secondary">NOTE: </b>
                 Some of the apps are deployed to Heroku for free, so if an app
                 wasn't used for some time, they put it to sleep. So, you might
                 encounter some waiting time. But that's NOT because the app is
@@ -245,7 +247,7 @@ class Work extends Component {
               </a>
               <p
                 role="img"
-                aria-label="idea-x"
+                aria-label="reactiveRSS"
                 style={{ textAlign: "center", letterSpacing: "4px" }}
               >
                 <span className="text-secondary">
@@ -416,7 +418,7 @@ class Work extends Component {
                 title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
               />
               <a
-                href="https://dev-nexup.herokuapp.com/"
+                href="https://devspot.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -424,7 +426,7 @@ class Work extends Component {
                 <i className="fas fa-eye" /> Live preview
               </a>
               <a
-                href="https://github.com/BiggaHD/Dev-NexUp"
+                href="https://github.com/BiggaHD/devSpot"
                 target="_blank"
                 className="btn-dark"
                 rel="noopener noreferrer"
@@ -438,7 +440,7 @@ class Work extends Component {
                 className=""
               >
                 <span className="text-secondary">
-                  <b>Dev_nexUp</b>
+                  <b>Dev_Spot</b>
                 </span>
                 <br />
                 It's a social network for developers 💻
@@ -446,12 +448,44 @@ class Work extends Component {
             </div>
 
             <div className="item">
+              <ImageComponent img={p17} title="" />
+              <a
+                href="https://client-panel-2019.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/client-panel"
+                target="_blank"
+                className="btn-dark"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="developers"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+                className=""
+              >
+                <span className="text-secondary">
+                  <b>Client Panel</b>
+                </span>
+                <br />
+                Add clients, check/ change their balances ... 💶
+              </p>
+            </div>
+
+            <div className="item">
               <ImageComponent
                 img={p8}
-                title="Build using React 16 + Redux --> It uses 'Open Weather + Google Maps API to display search results of temperatures for your favourite cities using visual graphs ..."
+                title="Build using React 16 + Redux --> It uses 'Open Weather API to display search results of temperatures for your favourite cities using visual graphs ..."
               />
               <a
-                href="https://reactive-clima.herokuapp.com/"
+                href="https://reactive-clima.web.app/"
                 target="_blank"
                 className="btn-light"
                 rel="noopener noreferrer"
@@ -485,7 +519,7 @@ class Work extends Component {
                 title="This was the time when I switched from Angular to React"
               />
               <a
-                href="https://reactive-tube.herokuapp.com/"
+                href="https://reactive-tube.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -519,7 +553,7 @@ class Work extends Component {
                 title="My sesocnd Angular app that tracks your recipes and shopping list as well"
               />
               <a
-                href="https://ng-recipes.herokuapp.com"
+                href="https://ng-recipes-f4e6c.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -549,7 +583,7 @@ class Work extends Component {
                 title="When I first started using Angular 2+"
               />
               <a
-                href="https://sport-store.herokuapp.com"
+                href="https://sportstore-35e33.firebaseapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -579,7 +613,7 @@ class Work extends Component {
                 title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
               />
               <a
-                href="https://bigga-calorie-tracker.herokuapp.com/"
+                href="https://calorie-tracker-64319.firebaseapp.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -640,7 +674,7 @@ class Work extends Component {
                 title="A cool little app that lets you search local JSON files or remote API response data."
               />
               <a
-                href="https://data-search.herokuapp.com/"
+                href="https://data-search-8e6fd.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -661,6 +695,38 @@ class Work extends Component {
                 </span>
                 <br />
                 Search users info by first name, surname or company 🔎
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p18} title="evolWe" />
+              <a
+                href="https://evolwe-example-ab386.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/evolWE"
+                target="_blank"
+                className="btn-dark"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="developers"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+                className=""
+              >
+                <span className="text-secondary">
+                  <b>evolWe 1.0 </b>
+                </span>
+                <br />
+                An example of my client's page. I made a bunch of them 📱 🖥
               </p>
             </div>
           </div>
