@@ -222,7 +222,7 @@ class Work extends Component {
                   </span>
                 </span>
                 <br />
-                It stores your tasks into LS
+                With persistent data
               </p>
               <br />
             </div>
