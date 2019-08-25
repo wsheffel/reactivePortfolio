@@ -698,7 +698,7 @@ class Work extends Component {
               </p>
             </div>
 
-            <div className="item">
+            {/* <div className="item">
               <ImageComponent img={p18} title="evolWe" />
               <a
                 href="https://evolwe-example-ab386.firebaseapp.com/"
@@ -728,7 +728,7 @@ class Work extends Component {
                 <br />
                 An example of my client's page. I made a bunch of them 📱 🖥
               </p>
-            </div>
+            </div> */}
           </div>
         </main>
       </div>
