@@ -6,13 +6,13 @@ const Footer = () => {
       <footer id="footer">
         <article id="wrap" className="text-center">
           <p className="display-6 text-center text-info mt-5">
-            Dzenis H.
+            Dzenis H.{""}
             <span role="img" aria-label="dash" className="text-center">
-              ➖
+              {""}➖
             </span>
-            Portfolio
+            Portfolio{""}
             <span role="img" aria-label="dash" className="text-center">
-              ➖
+              {""}➖
             </span>
             Copyright © 2019
           </p>

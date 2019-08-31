@@ -23,7 +23,7 @@ const Home = () => {
             <i className="fab fa-github fa-2x" />
           </a>
           <a
-            href="https://stackoverflow.com/cv/bigga_hd"
+            href="https://stackoverflow.com/users/8146571/bigga-hd"
             target="_blank"
             rel="noopener noreferrer"
           >

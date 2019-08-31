@@ -583,7 +583,7 @@ class Work extends Component {
                 title="When I first started using Angular 2+"
               />
               <a
-                href="https://sportstore-35e33.firebaseapp.com"
+                href="https://ng-sports-store.web.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -613,7 +613,7 @@ class Work extends Component {
                 title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
               />
               <a
-                href="https://calorie-tracker-64319.firebaseapp.com"
+                href="https://web-calorie-tracker.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -643,7 +643,7 @@ class Work extends Component {
                 title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
               />
               <a
-                href="https://loan-calculator-2.herokuapp.com"
+                href="https://web-loan-calculator.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -698,10 +698,10 @@ class Work extends Component {
               </p>
             </div>
 
-            {/* <div className="item">
+            <div className="item">
               <ImageComponent img={p18} title="evolWe" />
               <a
-                href="https://evolwe-example-ab386.firebaseapp.com/"
+                href="https://evolwe-example-site.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -728,7 +728,7 @@ class Work extends Component {
                 <br />
                 An example of my client's page. I made a bunch of them 📱 🖥
               </p>
-            </div> */}
+            </div>
           </div>
         </main>
       </div>
