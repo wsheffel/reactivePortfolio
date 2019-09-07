@@ -21,7 +21,7 @@ import p16 from "../img/projects/p16.png";
 import p17 from "../img/projects/p17.png";
 import p18 from "../img/projects/p18.jpg";
 
-import Local_Setup from "../dox/Local_Setup.pdf";
+import Local_Setup from "../documents/Local_Setup.pdf";
 
 class Work extends Component {
   constructor() {
@@ -160,6 +160,7 @@ class Work extends Component {
               </li>
               <li>... and so much more</li>
               <hr />
+
               <li style={{ listStyleType: "none", paddingBottom: ".5rem" }}>
                 <a
                   href="#!"
@@ -306,37 +307,6 @@ class Work extends Component {
             </div>
 
             <div className="item">
-              <ImageComponent img={p3} title="idea-x" />
-              <a
-                href="https://idea-x.herokuapp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/IDEA_x"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p
-                role="img"
-                aria-label="idea-x"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <b>idea_X</b>
-                </span>
-                <br />
-                Ideas for your next coding project 💡
-              </p>
-            </div>
-
-            <div className="item">
               <ImageComponent img={p2} title="Bigga File Uploads" />
               <a
                 href="https://bigga-uploads.herokuapp.com/"
@@ -425,6 +395,37 @@ class Work extends Component {
                 </span>
                 <br />
                 Web app that uses TMDb API 🎬
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p3} title="idea-x" />
+              <a
+                href="https://idea-x.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/IDEA_x"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="idea-x"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>idea_X</b>
+                </span>
+                <br />
+                Ideas for your next coding project 💡
               </p>
             </div>
 

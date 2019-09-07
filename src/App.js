@@ -6,9 +6,9 @@ import Work from "./components/WorkComponent";
 import Contact from "./components/ContactComponent";
 import Footer from "./components/FooterComponent";
 import Navbar from "./components/NavbarComponent";
-import "./App.css";
+import "./style/App.css";
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <Router>
@@ -23,6 +23,6 @@ function App() {
       </Router>
     </Fragment>
   );
-}
+};
 
 export default App;

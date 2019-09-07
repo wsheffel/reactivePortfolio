@@ -1,22 +1,51 @@
 import React, { Fragment } from "react";
-import CL from "../dox/Cover-Letter.pdf";
-import CV from "../dox/Dzenis-H.pdf";
+import CL from "../documents/Cover-Letter.pdf";
+import CV from "../documents/Dzenis-H.pdf";
+// import Particles from "react-particles-js";
+// import config from "../particles-config.json";
 
 const Home = () => {
+  setTimeout(() => {
+    (() => {
+      // Cloning divs where particles go in order not to put 300 of them in the markup :)
+      const node = document.querySelector(".parts");
+      [...Array(300)].forEach(_ =>
+        node.parentNode.insertBefore(node.cloneNode(true), node)
+      );
+    })();
+  }, 200);
+
   return (
     <Fragment>
-      <main id="home">
-        <h1 className="lg-heading">
+      <main id="home" style={{ overflow: "hidden" }}>
+        <div className="particles">
+          <div className="parts"></div>
+        </div>
+
+        {/* <div
+          style={{
+            zIndex: "-10",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0
+          }}
+        >
+          <Particles params={config} />
+        </div> */}
+
+        <h1 className="lg-heading text">
           Dzenis
           <i className="text-secondary"> H.</i>
         </h1>
-        <h2 className="">
+        <h2 className="text">
           <i>
             Competent <span className="text-secondary">Full Stack</span> Web
             Developer
           </i>
         </h2>
-        <div className="icons">
+        <div className="icons" style={{ position: "relative" }}>
           <a
             href="https://github.com/BiggaHD"
             target="_blank"
