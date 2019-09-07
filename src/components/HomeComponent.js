@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import CL from "../documents/Cover-Letter.pdf";
 import CV from "../documents/Dzenis-H.pdf";
 // import Particles from "react-particles-js";
-// import config from "../particles-config.json";
+// import config from "../config/particles-config.json";
 
 const Home = () => {
   setTimeout(() => {
