@@ -9,7 +9,11 @@
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.9.0",
     "react-modal-video": "^1.2.2",
+<<<<<<< HEAD
     "react-motion": "^0.5.2",
+=======
+    "react-particles-js": "^2.7.0",
+>>>>>>> d386ee69a86bc8b736c5de1c2535a2cc5ea7b444
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0"
   },
@@ -17,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

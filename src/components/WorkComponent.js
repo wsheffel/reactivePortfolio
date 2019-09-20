@@ -189,7 +189,7 @@ class Work extends Component {
               I build software every day. Here's a nice collection of some of my
               other apps, in no particular order:
             </h3>
-            <p
+            {/* <p
               style={{
                 color: "white",
                 fontSize: ".85rem"
@@ -200,7 +200,7 @@ class Work extends Component {
               time, they put it to sleep. You might encounter some waiting time.{" "}
               It's <b style={{ color: "firebrick " }}>NOT</b> because of bad
               code, errors, nor optimization. Please keep that in mind. Thanks!
-            </p>
+            </p> */}
             <hr />
           </div>
 
