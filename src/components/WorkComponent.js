@@ -5,7 +5,7 @@ import ImageComponent from "./ImageComponent";
 import p1 from "../img/projects/p1.JPG";
 import p2 from "../img/projects/p2.png";
 import p3 from "../img/projects/p3.png";
-import p4 from "../img/projects/p4.png";
+// import p4 from "../img/projects/p4.png";
 import p5 from "../img/projects/p5.png";
 import p6 from "../img/projects/p6.png";
 import p7 from "../img/projects/p7.jpg";
@@ -15,11 +15,12 @@ import p10 from "../img/projects/p10.JPG";
 import p11 from "../img/projects/p11.jpg";
 import p12 from "../img/projects/p12.jpg";
 import p13 from "../img/projects/p13.jpg";
-import p14 from "../img/projects/p14.jpg";
+import p14 from "../img/projects/p14.png";
 import p15 from "../img/projects/p15.png";
 import p16 from "../img/projects/p16.png";
 import p17 from "../img/projects/p17.png";
 import p18 from "../img/projects/p18.jpg";
+import Local_Setup from "../documents/Local_Setup.pdf";
 
 class Work extends Component {
   constructor() {
@@ -50,7 +51,31 @@ class Work extends Component {
             onClose={() => this.setState({ videoOpen: false })}
           />
 
-          <div className="projects">
+          <div>
+            <p
+              role="img"
+              aria-label="hr-ems"
+              style={{
+                textAlign: "center",
+                letterSpacing: "4px",
+                marginTop: ".1rem"
+              }}
+            >
+              <span className="text-secondary" aria-label="dash">
+                <b>
+                  <i>Mars EMS</i>➖
+                </b>
+              </span>
+              Full stack web app build using the
+              <b style={{ color: "black" }}> MERN</b> stack (
+              <i>amongst other things</i>)
+              <span role="img" aria-label="chart">
+                📊 📉 📈 📆 📑
+              </span>
+            </p>
+          </div>
+
+          <div className="highlightedProject">
             <div className="item">
               <ImageComponent img={p1} />
               <a
@@ -69,37 +94,15 @@ class Work extends Component {
               >
                 <i className="fab fa-github" /> Github repo
               </a>
-              <p
-                role="img"
-                aria-label="hr-ems"
-                style={{
-                  textAlign: "center",
-                  letterSpacing: "4px",
-                  marginTop: "4rem"
-                }}
-              >
-                <span className="text-secondary">
-                  <b>
-                    <i>Automated-Accountant</i>
-                  </b>
-                </span>
-                <br />
-                Full stack web app build using the
-                <b style={{ color: "black" }}>MERN</b> stack (
-                <i>amongst other things</i>) <br />
-                <span role="img" aria-label="chart">
-                  📊 📉 📈 📆 📑
-                </span>
-              </p>
             </div>
 
-            <div className="item">
-              <h3 className="text-secondary">
+            <div className="item description">
+              <h3 className="text-secondary textShadow">
                 This is my latest and the proudest project:
               </h3>
 
               <p>
-                This is a EMS software - [Employee management system] that can
+                This is an EMS software - [Employee management system] that can
                 help companies reduce their time spent on salaries, penalties,
                 bonuses and a lot of other things regarding the accounting
                 department, as well as many things regarding HR department
@@ -109,16 +112,19 @@ class Work extends Component {
                 making annual/ monthly reports, and so much more. It looks and
                 feels great thanks to great structure and design, and even
                 though it possesses a lot of features, the complexity is hidden
-                from the end user, so it always appears easy to use, no matter
+                from the end-user, so it always appears easy to use, no matter
                 what level of functionality you choose to use. It uses ReactJS
                 on the frontend and NodeJS on the backend.
               </p>
             </div>
 
-            <ul className="item">
-              <li style={{ listStyleType: "none" }}>
-                <b className="text-secondary">
-                  Some of the technologies used include:
+            <ul
+              className="item adhd"
+              style={{ listStyleType: "none", marginTop: 0, paddingTop: 0 }}
+            >
+              <li>
+                <b className="text-secondary textShadow">
+                  Some of the technologies used in this app include:
                 </b>
               </li>
               <hr />
@@ -129,7 +135,7 @@ class Work extends Component {
                 <b>React 16</b> (<i>with Context API & React-Router 4</i>)
               </li>
               <li>
-                <b>Redux</b> (<i>for 90% of my state management</i>)
+                <b>Redux</b> (<i>for 90% of the state management</i>)
               </li>
               <li>
                 <b>NodeJS</b> (
@@ -153,11 +159,12 @@ class Work extends Component {
               </li>
               <li>... and so much more</li>
               <hr />
+
               <li style={{ listStyleType: "none", paddingBottom: ".5rem" }}>
                 <a
                   href="#!"
                   id="video"
-                  className="icons"
+                  className="icons textShadow"
                   onClick={this.openVideoModal}
                 >
                   <i className="fab fa-youtube fa-2x" />
@@ -166,71 +173,45 @@ class Work extends Component {
               </li>
 
               <li style={{ listStyleType: "none" }}>
-                <a href="../dox/Local_Setup.docx" className="icons" download>
+                <a
+                  href={Local_Setup}
+                  className="icons textShadow"
+                  download="Local_Setup"
+                >
                   <i className="fas fa-download fa-2x" /> Download Instructions
                 </a>
               </li>
             </ul>
+          </div>
 
-            <div className="hobby">
-              <hr />
-              <h3 className="text-secondary">
-                Some of my other apps, including the very first one (right
-                under)
-              </h3>
-              <small className="text-info">
-                <b className="text-secondary">NOTE: </b>
-                Some of the apps are deployed to Heroku for free, so if an app
-                wasn't used for some time, they put it to sleep. So, you might
-                encounter some waiting time. But that's NOT because the app is
-                broken, because of bad code, errors, nor optimization. Please
-                keep that in mind. Thanks!
-              </small>
-              <div className="item">
-                <ImageComponent
-                  img={p4}
-                  title=""
-                  style={{ marginTop: "9px" }}
-                  alt="Web-To-Do"
-                />
+          <div className="text-secondary otherApps textShadow">
+            <h3 style={{ textShadow: "2px 2px black" }}>
+              I build software every day. Here's a nice collection of some of my
+              other apps, in no particular order:
+            </h3>
+            <p
+              style={{
+                color: "white",
+                fontSize: ".85rem"
+              }}
+            >
+              <span className="diff-text">NOTE:</span> Some apps are deployed to{" "}
+              <span>Heroku</span> for free and if an app wasn't used for some
+              time, they put it to sleep. You might encounter some waiting time.{" "}
+              It's <b style={{ color: "firebrick " }}>NOT</b> because of bad
+              code, errors, nor optimization. Please keep that in mind. Thanks!
+            </p>
+            <hr />
+          </div>
 
-                <a
-                  href="https://biggahd.github.io/Web-To-Do-App/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-light"
-                >
-                  <i className="fas fa-eye" /> Live preview
-                </a>
-                <a
-                  href="https://github.com/BiggaHD/Web-To-Do-App"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-dark"
-                >
-                  <i className="fab fa-github" /> Github repo
-                </a>
-              </div>
-              <p
-                role="img"
-                aria-label="mongo"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <span role="img" aria-label="note">
-                    Web-To-Do-App 📋
-                  </span>
-                </span>
-                <br />
-                It stores your tasks into LS
-              </p>
-              <br />
-            </div>
-
+          <div className="projects">
             <div className="item">
-              <ImageComponent img={p15} title="reactive-rss" />
+              <ImageComponent
+                img={p7}
+                title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
+              />
               <a
-                href="https://reactive-rss-d3f9c.web.app"
+                href="https://dev--spot.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -238,146 +219,24 @@ class Work extends Component {
                 <i className="fas fa-eye" /> Live preview
               </a>
               <a
-                href="https://github.com/BiggaHD/Reactive-RSS"
+                href="https://github.com/BiggaHD/devSpot"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="btn-dark"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-github" /> Github repo
               </a>
               <p
                 role="img"
-                aria-label="reactiveRSS"
+                aria-label="developers"
                 style={{ textAlign: "center", letterSpacing: "4px" }}
+                className=""
               >
                 <span className="text-secondary">
-                  <b>reactiveRSS</b>
+                  <b>Dev_Spot</b>
                 </span>
                 <br />
-                Great way to add, save, edit, delete, follow your RSS feeds 📰
-              </p>
-            </div>
-
-            <div className="item">
-              <ImageComponent img={p16} title="iZEN" />
-              <a
-                href="https://izen-250312.firebaseapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/iZEN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p
-                role="img"
-                aria-label="idea-x"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <b>iZEN</b>
-                </span>
-                <br />
-                Nice relaxing sounds & visuals to help you relax 🧘‍
-              </p>
-            </div>
-
-            <div className="item">
-              <ImageComponent img={p3} title="idea-x" />
-              <a
-                href="https://idea-x.herokuapp.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/IDEA_x"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p
-                role="img"
-                aria-label="idea-x"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <b>idea_X</b>
-                </span>
-                <br />
-                Ideas for your next coding project 💡
-              </p>
-            </div>
-
-            <div className="item">
-              <ImageComponent img={p2} title="Bigga File Uploads" />
-              <a
-                href="https://mongo-uploads.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/bigga_file_uploads"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p
-                role="img"
-                aria-label="mongo"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <b>Bigga File Uploads</b>
-                </span>
-                <br />
-                Simple 2 Way Data Transfer 🌀
-              </p>
-            </div>
-
-            <div className="item">
-              <ImageComponent img={p5} title="miniStories" />
-              <a
-                href="https://mini-stories.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/miniStories"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p
-                role="img"
-                aria-label="movie"
-                style={{ textAlign: "center", letterSpacing: "4px" }}
-              >
-                <span className="text-secondary">
-                  <b>miniStories</b>
-                </span>
-                <br />A mini social network site with many extras 📗
+                It's a social network for developers 💻
               </p>
             </div>
 
@@ -413,12 +272,9 @@ class Work extends Component {
             </div>
 
             <div className="item">
-              <ImageComponent
-                img={p7}
-                title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
-              />
+              <ImageComponent img={p15} title="reactive-rss" />
               <a
-                href="https://devspot.herokuapp.com/"
+                href="https://reactive-rss-d3f9c.web.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -426,24 +282,84 @@ class Work extends Component {
                 <i className="fas fa-eye" /> Live preview
               </a>
               <a
-                href="https://github.com/BiggaHD/devSpot"
+                href="https://github.com/BiggaHD/Reactive-RSS"
                 target="_blank"
-                className="btn-dark"
                 rel="noopener noreferrer"
+                className="btn-dark"
               >
                 <i className="fab fa-github" /> Github repo
               </a>
               <p
                 role="img"
-                aria-label="developers"
+                aria-label="reactiveRSS"
                 style={{ textAlign: "center", letterSpacing: "4px" }}
-                className=""
               >
                 <span className="text-secondary">
-                  <b>Dev_Spot</b>
+                  <b>reactiveRSS</b>
                 </span>
                 <br />
-                It's a social network for developers 💻
+                Great way to add, save, edit, delete, follow your RSS feeds 📰
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p5} title="miniStories" />
+              <a
+                href="http://mini--stories.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/miniStories"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="movie"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>miniStories</b>
+                </span>
+                <br />A mini social network site with many extras 📗
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p3} title="idea-x" />
+              <a
+                href="http://idea--x.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/IDEA_x"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="idea-x"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>idea_X</b>
+                </span>
+                <br />
+                Ideas for your next coding project 💡
               </p>
             </div>
 
@@ -476,6 +392,37 @@ class Work extends Component {
                 </span>
                 <br />
                 Add clients, check/ change their balances ... 💶
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p16} title="iZEN" />
+              <a
+                href="https://izen-250312.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/iZEN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="idea-x"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+              >
+                <span className="text-secondary">
+                  <b>iZEN</b>
+                </span>
+                <br />
+                Nice relaxing sounds & visuals to help you relax 🧘‍
               </p>
             </div>
 
@@ -579,11 +526,73 @@ class Work extends Component {
 
             <div className="item">
               <ImageComponent
+                img={p14}
+                title="Create a profile, build the burger you like, order it, enjoy"
+              />
+              <a
+                href="https://reactive-hamburger.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/Reactive-Burger"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-dark"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p style={{ textAlign: "center", letterSpacing: "4px" }}>
+                <span className="text-secondary">
+                  <b>Reactive Burger</b>
+                </span>
+                <br />
+                Create a profile, build the burger you like, order it, enjoy 🍔
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent img={p18} title="evolWe" />
+              <a
+                href="https://evolwe-example-site.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-light"
+              >
+                <i className="fas fa-eye" /> Live preview
+              </a>
+              <a
+                href="https://github.com/BiggaHD/evolWE"
+                target="_blank"
+                className="btn-dark"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github" /> Github repo
+              </a>
+              <p
+                role="img"
+                aria-label="developers"
+                style={{ textAlign: "center", letterSpacing: "4px" }}
+                className=""
+              >
+                <span className="text-secondary">
+                  <b>evolWe 1.0 </b>
+                </span>
+                <br />
+                An example of my client's page. I made a bunch of them 📱 🖥
+              </p>
+            </div>
+
+            <div className="item">
+              <ImageComponent
                 img={p11}
                 title="When I first started using Angular 2+"
               />
               <a
-                href="https://sportstore-35e33.firebaseapp.com"
+                href="https://ng-sports-store.web.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -613,7 +622,7 @@ class Work extends Component {
                 title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
               />
               <a
-                href="https://calorie-tracker-64319.firebaseapp.com"
+                href="https://web-calorie-tracker.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -643,7 +652,7 @@ class Work extends Component {
                 title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
               />
               <a
-                href="https://loan-calculator-2.herokuapp.com"
+                href="https://web-loan-calculator.firebaseapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -669,12 +678,9 @@ class Work extends Component {
             </div>
 
             <div className="item">
-              <ImageComponent
-                img={p14}
-                title="A cool little app that lets you search local JSON files or remote API response data."
-              />
+              <ImageComponent img={p2} title="Bigga File Uploads" />
               <a
-                href="https://data-search-8e6fd.firebaseapp.com/"
+                href="https://bigga-share.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-light"
@@ -682,51 +688,23 @@ class Work extends Component {
                 <i className="fas fa-eye" /> Live preview
               </a>
               <a
-                href="https://github.com/BiggaHD/dataSearch"
+                href="https://github.com/BiggaHD/bigga_file_uploads"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-dark"
-              >
-                <i className="fab fa-github" /> Github repo
-              </a>
-              <p style={{ textAlign: "center", letterSpacing: "4px" }}>
-                <span className="text-secondary">
-                  <b>dataSearch</b>
-                </span>
-                <br />
-                Search users info by first name, surname or company 🔎
-              </p>
-            </div>
-
-            <div className="item">
-              <ImageComponent img={p18} title="evolWe" />
-              <a
-                href="https://evolwe-example-ab386.firebaseapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-light"
-              >
-                <i className="fas fa-eye" /> Live preview
-              </a>
-              <a
-                href="https://github.com/BiggaHD/evolWE"
-                target="_blank"
-                className="btn-dark"
-                rel="noopener noreferrer"
               >
                 <i className="fab fa-github" /> Github repo
               </a>
               <p
                 role="img"
-                aria-label="developers"
+                aria-label="mongo"
                 style={{ textAlign: "center", letterSpacing: "4px" }}
-                className=""
               >
                 <span className="text-secondary">
-                  <b>evolWe 1.0 </b>
+                  <b>Bigga File Uploads</b>
                 </span>
                 <br />
-                An example of my client's page. I made a bunch of them 📱 🖥
+                Simple 2 Way Data Transfer 🌀
               </p>
             </div>
           </div>

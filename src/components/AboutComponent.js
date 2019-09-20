@@ -20,13 +20,12 @@ const About = () => {
             <small>
               I'm highly passionate when it comes to learning all sort of
               things. That's what keeps me going in life. These days I'm
-              borderline obsessed about CS. Programming is a new challenge/
-              passion for me which I took very seriously and I won't slow down
-              until I feel like I achieved some level of{" "}
-              <em className="diff-text">mastery</em>. Then the actual fun
-              begins. Until that moment, it's all about self-discipline,
-              continuous learning and tremendous patience. I, in one word:{" "}
-              <q className="diff-text">DRIVEN</q>
+              borderline obsessed with programming. I look at coding as a
+              never-ending challenge and I won't slow down until I feel like I
+              achieved a level of <em className="diff-text">mastery</em>. Then
+              the actual fun begins. Until that moment, it's all about
+              self-discipline, continuous learning and tremendous patience. I,
+              in one word: <q className="diff-text">DRIVEN</q>
             </small>
             <hr />
             <p className="text-secondary">
@@ -43,7 +42,7 @@ const About = () => {
                 but a habit."
               </blockquote>
               And in the words of the infamous
-              <em className="diff-text">Howard Hughes:</em>
+              <em className="diff-text"> Howard Hughes:</em>
               <blockquote className="sunflower">
                 "Don't tell me I can't do it; Don't tell me it can't be done."
               </blockquote>
@@ -52,19 +51,22 @@ const About = () => {
               </p>
               <span className="primary-color">
                 <p>
-                  We'll do it together. If it's not working, it's time to change
-                  our daily routines and start thinking outside the box. I like
-                  to collaborate, to share knowledge and positive vibes. I'm a
-                  true team player. But what can affect me in a negative way is
-                  someone claiming something can't be done, especially
-                  project-related. Okay, maybe he/ she is right about the first
-                  part, but if I can't do it by myself, then
+                  We'll do it together. If it's not working now, maybe it's time
+                  to change our energy, daily routines and to start thinking
+                  outside the box. I'm all about positive vibes. I like to
+                  collaborate, to receive and share knowledge and cliche as it
+                  sounds, I'm a true team player. But what can affect me in a
+                  negative way is someone claiming something is undoable. If I
+                  can't do it by myself, then
                   <span className="diff-text">
                     {" "}
                     <em>WE</em>
                   </span>{" "}
-                  can absolutely achieve it together. I stand corrected, so
-                  please just don't share the rumor that something is undoable.
+                  can absolutely achieve it{" "}
+                  <span className="diff-text">
+                    <em>together</em>.
+                  </span>{" "}
+                  <br />
                   Let's stay calm, focused, driven, and by the end of the day
                   let's make this work.
                 </p>
@@ -100,24 +102,21 @@ const About = () => {
             <ul>
               <li>
                 <b className="text-secondary">HTML5 </b>
-                <i>[static or/ and with advanced apps]</i>
+                <i>[for a semi to fully dynamic sites/ apps]</i>
               </li>
               <li>
                 <b className="text-secondary">CSS3 </b>
-                <i>
-                  [incl. <b>SASS</b>➖like this particular site]
-                  <span className="text-secondary"> :)</span>
-                </i>
+                <i>[w/ the newest standards and approaches]</i>
               </li>
               <li>
                 <b className="text-secondary">JavaScript </b>
                 <i>
-                  [Proficient with vanilla <b>ES6+</b>]
+                  [Proficient with vanilla <b>ES6</b> and above]
                 </i>
               </li>
               <li>
                 <b className="text-secondary">React 16 </b>
-                <i>[w/ Context API, Hooks & React-Router]</i>
+                <i>[incl. everything that works great with it]</i>
               </li>
               <li>
                 <b className="text-secondary">Redux </b>
@@ -141,6 +140,10 @@ const About = () => {
                   [great with <b>MaterializeCSS</b> too]
                 </i>
               </li>
+              <li>
+                <b className="text-secondary">Sass </b>
+                <i>[when CSS is just not enough]</i>
+              </li>
             </ul>
           </div>
 
@@ -159,12 +162,17 @@ const About = () => {
                 <i>[as the main helper library]</i>
               </li>
               <li>
-                <b className="text-secondary">Webpack </b>{" "}
+                <b className="text-secondary">Webpack </b>
                 <i>[for module bundling]</i>
               </li>
               <li>
                 <b className="text-secondary">Gulp </b>
                 <i>[when a task runner is required]</i>
+              </li>
+
+              <li>
+                <b className="text-secondary">Babel </b>
+                <i>[for backward compatibility of ES6+]</i>
               </li>
               <li>
                 <b className="text-secondary">Postman </b>
@@ -191,9 +199,9 @@ const About = () => {
               Technology that I'm currently most focused on:
               <b className="text-secondary"> NodeJS.</b> <br />
               Language that I'm familiar with, but don't use often:
-              <b className="text-secondary">Java.</b> <br />
+              <b className="text-secondary"> Java.</b> <br />
               Language I would like to work with in the future:
-              <b className="text-secondary">Python.</b>
+              <b className="text-secondary"> Python.</b>
             </h5>
             <hr />
             <h5 style={{ marginTop: "0.2rem" }}>

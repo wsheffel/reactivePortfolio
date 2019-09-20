@@ -1,37 +1,92 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  return (
-    <nav id="navbar">
-      <article id="wrap" className="text-center">
-        <Link to="/" className="display-6 text-center text-info mt-5">
-          HOME
-        </Link>
-        <Link to="/about" className="display-6 text-center text-info mt-5">
-          ABOUT
-        </Link>
-        <Link to="/work" className="display-6 text-center text-info mt-5">
-          WORK
-        </Link>
-        <Link to="/contact" className="display-6 text-center text-info mt-5">
-          CONTACT
-        </Link>
+class thinkBitch extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showMenu: false,
+      menuBtn: "menu-btn blob yellow",
+      menu: "menu",
+      menuNav: "menu-nav",
+      menuBranding: "menu-branding",
+      navItems: "nav-item"
+    };
+  }
 
-        <article id="lightings">
-          <section id="one">
-            <section id="two">
-              <section id="three">
-                <section id="four">
-                  <section id="five" />
-                </section>
-              </section>
-            </section>
-          </section>
-        </article>
-      </article>
-    </nav>
-  );
-};
+  toggleMenu() {
+    const { showMenu } = this.state;
+    if (!showMenu) {
+      this.setState({
+        showMenu: true,
+        menuBtn: "menu-btn close",
+        menu: "menu show",
+        menuNav: "menu-nav show",
+        menuBranding: "menu-branding show",
+        navItems: "nav-item show"
+      });
+    } else {
+      this.setState({
+        showMenu: false,
+        // Pulse is popnly going to be present until
+        // the user finds/ clicks the MENU btn
+        menuBtn: "menu-btn"
+      });
+    }
+  }
 
-export default Navbar;
+  render() {
+    const {
+      showMenu,
+      menu,
+      menuNav,
+      menuBranding,
+      navItems,
+      menuBtn
+    } = this.state;
+
+    return (
+      <div>
+        <header>
+          <div className={menuBtn} onClick={this.toggleMenu.bind(this)}>
+            <div className="btn-line"></div>
+            <div className="btn-line"></div>
+            <div className="btn-line"></div>
+          </div>
+
+          {showMenu === true ? (
+            <nav className={menu}>
+              <div className={menuBranding}>
+                <div className="portrait"></div>
+              </div>
+              <ul className={menuNav} onClick={this.toggleMenu.bind(this)}>
+                <li className={navItems}>
+                  <Link to="/" className="nav-link">
+                    Home
+                  </Link>
+                </li>
+                <li className={navItems}>
+                  <Link to="/about" className="nav-link">
+                    About
+                  </Link>
+                </li>
+                <li className={navItems}>
+                  <Link to="/work" className="nav-link">
+                    Work
+                  </Link>
+                </li>
+                <li className={navItems}>
+                  <Link to="/contact" className="nav-link">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          ) : null}
+        </header>
+      </div>
+    );
+  }
+}
+
+export default thinkBitch;

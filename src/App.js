@@ -5,14 +5,14 @@ import About from "./components/AboutComponent";
 import Work from "./components/WorkComponent";
 import Contact from "./components/ContactComponent";
 import Footer from "./components/FooterComponent";
-import Navbar from "./components/NavbarComponent";
-import "./App.css";
+import Menu from "./components/NavbarComponent";
+import "./style/App.css";
 
 function App() {
   return (
     <Fragment>
       <Router>
-        <Navbar />
+        <Menu />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
