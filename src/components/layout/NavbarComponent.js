@@ -6,7 +6,7 @@ class thinkBitch extends Component {
     super();
     this.state = {
       showMenu: false,
-      menuBtn: "menu-btn blob yellow",
+      menuBtn: "menu-btn blob yellow menu-btn__add",
       menu: "menu",
       menuNav: "menu-nav",
       menuBranding: "menu-branding",
@@ -19,7 +19,7 @@ class thinkBitch extends Component {
     if (!showMenu) {
       this.setState({
         showMenu: true,
-        menuBtn: "menu-btn close",
+        menuBtn: "menu-btn close blob red",
         menu: "menu show",
         menuNav: "menu-nav show",
         menuBranding: "menu-branding show",
@@ -28,9 +28,9 @@ class thinkBitch extends Component {
     } else {
       this.setState({
         showMenu: false,
-        // Pulse is popnly going to be present until
-        // the user finds/ clicks the MENU btn
-        menuBtn: "menu-btn"
+        // Pulse effect & 'MENU' text is opnly going to be
+        // present until the user finds/ clicks the MENU btn
+        menuBtn: "menu-btn blob yellow"
       });
     }
   }

@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/HomeComponent";
 import About from "./components/AboutComponent";
-import Work from "./components/WorkComponent";
+import Work from "./components/Work/WorkComponent";
 import Contact from "./components/ContactComponent";
-import Footer from "./components/FooterComponent";
-import Menu from "./components/NavbarComponent";
+
+import Footer from "./components/layout/FooterComponent";
+import Menu from "./components/layout/NavbarComponent";
+
 import "./style/App.css";
 
 function App() {

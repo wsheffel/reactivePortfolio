@@ -110,9 +110,18 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
+
+.menu-btn__add {
+  color: #fff;
+}
+
+.menu-btn__add::before {
+  content: "MENU";
+}
+
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
+  width: 2.77rem;
+  height: 0.22rem;
   margin: 0 0 5px 0;
   background: #eece1a;
   transition: all 0.5s ease-out;
@@ -663,9 +672,9 @@ i {
   #home {
     text-align: center;
   }
-  .adhd {
+  .highlighetList {
     list-style-type: none;
-    margin-top: -6rem;
+    /* margin-top: -6rem; */
     padding-top: 0px;
     padding: inherit;
   }
@@ -726,9 +735,6 @@ i {
   ul li {
     text-align: left;
   }
-  /* .adhd {
-    display: none;
-  }  */
 }
 
 @media screen and (max-width: 612px) {
@@ -757,7 +763,7 @@ i {
   .dox {
     display: none;
   }
-  .adhd {
+  .highlighetList {
     list-style-type: none;
     margin-top: -6rem;
     padding-top: 0px;
