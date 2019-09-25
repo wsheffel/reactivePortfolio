@@ -6,7 +6,7 @@ import Work from "./components/Work/WorkComponent";
 import Contact from "./components/ContactComponent";
 
 import Footer from "./components/layout/FooterComponent";
-import Menu from "./components/layout/NavbarComponent";
+import Menu from "./components/layout/MenuComponent";
 
 import "./style/App.css";
 

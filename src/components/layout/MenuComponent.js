@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class thinkBitch extends Component {
+class Menu extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,7 +14,7 @@ class thinkBitch extends Component {
     };
   }
 
-  toggleMenu() {
+  toggleMenu = () => {
     const { showMenu } = this.state;
     if (!showMenu) {
       this.setState({
@@ -33,7 +33,7 @@ class thinkBitch extends Component {
         menuBtn: "menu-btn blob yellow"
       });
     }
-  }
+  };
 
   render() {
     const {
@@ -48,7 +48,7 @@ class thinkBitch extends Component {
     return (
       <div>
         <header>
-          <div className={menuBtn} onClick={this.toggleMenu.bind(this)}>
+          <div className={menuBtn} onClick={this.toggleMenu}>
             <div className="btn-line"></div>
             <div className="btn-line"></div>
             <div className="btn-line"></div>
@@ -89,4 +89,4 @@ class thinkBitch extends Component {
   }
 }
 
-export default thinkBitch;
+export default Menu;
