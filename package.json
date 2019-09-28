@@ -1,16 +1,15 @@
 {
   "name": "reactive-portfolio",
+  "description": "A peronal portfolio site build with the help of React and its usual friends :)",
   "version": "1.6.0",
   "private": true,
   "author": "Dzenis-H",
+  "homepage": "https://dzenis-h.com",
   "dependencies": {
     "react": "^16.9.0",
     "react-awesome-modal": "^2.0.5",
-    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.9.0",
     "react-modal-video": "^1.2.2",
-    "react-motion": "^0.5.2",
-    "react-particles-js": "^2.7.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0"
   },
