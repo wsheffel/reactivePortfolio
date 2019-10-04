@@ -1,9 +1,9 @@
 {
   "name": "reactive-portfolio",
   "description": "A peronal portfolio site build with the help of React and its usual friends :)",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "private": true,
-  "author": "Dzenis-H",
+  "author": "Dzenis H.",
   "homepage": "https://dzenis-h.com",
   "dependencies": {
     "react": "^16.9.0",
