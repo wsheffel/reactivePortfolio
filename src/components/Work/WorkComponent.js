@@ -100,7 +100,7 @@ class Work extends Component {
               <WrokTemplate
                 mainLink="https://reactive-movies.firebaseapp.com/"
                 github="https://github.com/BiggaHD/reactive_movies_db"
-                name="Ractive Movie DB"
+                name="Reactive Movie DB"
                 description="Web app that uses TMDb API 🎬"
               />
             </div>
@@ -251,7 +251,7 @@ class Work extends Component {
               <WrokTemplate
                 mainLink="https://web-loan-calculator.firebaseapp.com/"
                 github="https://github.com/BiggaHD/Loan-Calculator-2.0"
-                name="Balkan Recipe Book"
+                name="Loan Calculator 2.0"
                 description="Estimated payments for loan amounts, interest rates and terms 📊"
               />
             </div>

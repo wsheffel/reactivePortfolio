@@ -18,13 +18,13 @@ const About = () => {
           <div className="bio">
             <h3 className="text-secondary">Little Intro:</h3>
             <small>
-              I'm highly passionate when it comes to learning all sort of
+              I'm highly passionate when it comes to learning all sorts of
               things. That's what keeps me going in life. These days I'm
               borderline obsessed with programming. I look at coding as a
               never-ending challenge and I won't slow down until I feel like I
               achieved a level of <em className="diff-text">mastery</em>. Then
               the actual fun begins. Until that moment, it's all about
-              self-discipline, continuous learning and tremendous patience. I,
+              self-discipline, continuous learning, and tremendous patience. I,
               in one word: <q className="diff-text">DRIVEN</q>
             </small>
             <hr />
@@ -55,9 +55,9 @@ const About = () => {
                   to change our energy, daily routines and to start thinking
                   outside the box. I'm all about positive vibes. I like to
                   collaborate, to receive and share knowledge and cliche as it
-                  sounds, I'm a true team player. But what can affect me in a
-                  negative way is someone claiming something is undoable. If I
-                  can't do it by myself, then
+                  sounds, I'm a true team player. But what can negatively affect
+                  me is someone claiming something is undoable. If I can't do it
+                  by myself, then
                   <span className="diff-text">
                     {" "}
                     <em>WE</em>
@@ -67,7 +67,7 @@ const About = () => {
                     <em>together</em>.
                   </span>{" "}
                   <br />
-                  Let's stay calm, focused, driven, and by the end of the day
+                  Let's stay calm, focused, driven, and by the end of the day,
                   let's make this work.
                 </p>
               </span>
