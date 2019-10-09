@@ -15,33 +15,32 @@ const HighlightedList = props => {
         </li>
         <hr />
         <li>
-          <b>HTML5</b> & <b>CSS3</b> (<i>On a more advance level</i>)
+          <b>HTML5</b> & <b>CSS3</b> <i>(On a more advance level)</i>
         </li>
         <li>
-          <b>React 16</b> (<i>with Context API & React-Router 4</i>)
+          <b>React 16</b> <i>(with Context API & React-Router 4)</i>
         </li>
         <li>
-          <b>Redux</b> (<i>for 90% of the state management</i>)
+          <b>Redux</b> (<i>for 90% of the state management)</i>
         </li>
         <li>
-          <b>NodeJS</b> (
+          <b>NodeJS</b>
           <i>
-            with <b>SailsJS</b> in this particular project
+            (with <b>SailsJS</b> in this particular project)
           </i>
-          )
         </li>
         <li>
-          <b>MongoDB</b> (<i>for monthly local storage</i>)
+          <b>MongoDB</b> <i>(for monthly local storage)</i>
         </li>
         <li>
-          <b>Bootstrap 4</b> (<i> but mostly pure CSS3</i>)
+          <b>Bootstrap 4</b> <i>(but mostly pure CSS3)</i>
         </li>
         <li>
-          Google OAuth2, Drive & Spreadsheets APIs (
-          <i>for auth, sync, and remote storage</i>)
+          Google OAuth2, Drive & Spreadsheets APIs
+          <i>(for OAuth, sync, and remote storage)</i>
         </li>
         <li>
-          jQuery & Lodash (<i>as helper libraries</i>)
+          jQuery & Lodash <i>(as helper libraries)</i>
         </li>
         <li>... and so much more</li>
         <hr />

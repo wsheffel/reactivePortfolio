@@ -5,34 +5,34 @@ const About = () => {
   return (
     <Fragment>
       <main id="about">
-        <h1 className="lg-heading">
+        <h1 className="lg-heading textShadow">
           About
-          <i className="text-secondary"> Me</i>
+          <i className="text-secondary textShadow"> Me</i>
         </h1>
         <h2 className="sm-heading">
-          A brief insight into the complex, but pleasant person that makes me
+          A brief insight into the compound but a pleasant person that makes me
         </h2>
         <div className="about-info">
           <img src={Portrait} alt="Dzenis H." className="bio-image" />
 
           <div className="bio">
-            <h3 className="text-secondary">Little Intro:</h3>
+            <h3 className="text-secondary textShadow">Little Intro:</h3>
             <small>
               I'm highly passionate when it comes to learning all sorts of
               things. That's what keeps me going in life. These days I'm
               borderline obsessed with programming. I look at coding as a
-              never-ending challenge and I won't slow down until I feel like I
+              never-ending challenge, and I won't slow down until I feel like I
               achieved a level of <em className="diff-text">mastery</em>. Then
-              the actual fun begins. Until that moment, it's all about
+              the real fun begins. Until that moment, it's all about
               self-discipline, continuous learning, and tremendous patience. I,
               in one word: <q className="diff-text">DRIVEN</q>
             </small>
             <hr />
-            <p className="text-secondary">
+            <p className="text-secondary textShadow">
               My life philosophy goes something like this:
             </p>
             <small>
-              <strong>
+              <strong className="textShadow">
                 The level of your success can be found in your daily routine.
               </strong>
               <hr style={{ marginBottom: ".2rem" }} />
@@ -46,18 +46,25 @@ const About = () => {
               <blockquote className="sunflower">
                 "Don't tell me I can't do it; Don't tell me it can't be done."
               </blockquote>
-              <p className="text-secondary">
-                But my very own personality is a little bit different:
+              <p
+                className="text-secondary textShadow"
+                style={{ fontSize: "1.25rem" }}
+              >
+                However, my very own personality is a little bit different:
               </p>
               <span className="primary-color">
                 <p>
-                  We'll do it together. If it's not working now, maybe it's time
-                  to change our energy, daily routines and to start thinking
-                  outside the box. I'm all about positive vibes. I like to
-                  collaborate, to receive and share knowledge and cliche as it
-                  sounds, I'm a true team player. But what can negatively affect
-                  me is someone claiming something is undoable. If I can't do it
-                  by myself, then
+                  <span className="bold textShadow">
+                    We'll do it together.{" "}
+                  </span>
+                  If it's not working now, maybe it's time to change our energy,
+                  daily routines and to start thinking outside the box. I'm all
+                  about positive vibes. I like to collaborate, to receive and
+                  share knowledge, and I possess a commitment to creating a
+                  strong team environment dynamics. One thing that can affect me
+                  negatively is when someone is claiming that a particular task
+                  is undoable. Okay, I get. It gets hard sometimes, but if an
+                  individual can't do it by themselves, then
                   <span className="diff-text">
                     {" "}
                     <em>WE</em>
@@ -94,8 +101,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="job job-1">
-            <h3 className="text-secondary">Tech stack:</h3>
+          <div className="job job-1 textShadow">
+            <h3 className="text-secondary specialFont bold">Tech stack:</h3>
             <h5>
               Technologies that I'm familiar with, practice and use daily:
             </h5>
@@ -147,8 +154,10 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="job job-2">
-            <h3 className="text-secondary">Additional utilities:</h3>
+          <div className="job job-2 textShadow">
+            <h3 className="text-secondary specialFont bold">
+              Additional utilities:
+            </h3>
             <h5>
               Some of additional tools and libraries that I use regularly:
             </h5>
@@ -193,8 +202,13 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="job job-3" style={{ paddingBottom: ".3rem" }}>
-            <h3 className="text-secondary">Other interesting facts:</h3>
+          <div
+            className="job job-3 textShadow"
+            style={{ paddingBottom: ".3rem" }}
+          >
+            <h3 className="text-secondary specialFont bold">
+              Other interesting facts:
+            </h3>
             <h5>
               Technology that I'm currently most focused on:
               <b className="text-secondary"> NodeJS.</b> <br />

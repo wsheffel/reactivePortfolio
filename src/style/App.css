@@ -1,12 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Montez");
-@import url("https://fonts.googleapis.com/css?family=Francois+One");
 @import url("https://fonts.googleapis.com/css?family=Cinzel|Monoton|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap");
 
 @import url("./additionalStyles.css");
 @import url("./animations.css");
 
+.dzenis {
+  font-size: 6rem;
+  font-weight: bolder;
+  font-family: "Bungee Hairline", cursive;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.726);
+  margin-top: 1rem;
+}
+
 .textShadow {
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.726);
+}
+
+.specialFont {
+  font-family: "Bungee Hairline", cursive;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.dark {
+  color: #000;
 }
 
 /* MAIN SECTION */
@@ -249,12 +268,13 @@ h2.lg-heading,
 h3.lg-heading {
   font-family: "Cinzel", serif;
   font-size: 6rem;
-  margin-top: 1rem;
-  /* z-index: 10; */
+  margin-top: 1.75rem;
 }
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
+  font-family: "Bungee Hairline", cursive;
+  font-weight: bold;
   margin-bottom: 2rem;
   padding: 0.5rem 0.5rem;
   background: rgba(73, 73, 73, 0.5);
@@ -368,10 +388,11 @@ header {
   margin-top: 1rem;
 }
 .boxes div {
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
-  margin-bottom: 3rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
   transition: all 0.5s ease-out;
 }
 .boxes div:hover {
@@ -674,18 +695,18 @@ i {
   }
   .highlighetList {
     list-style-type: none;
-    /* margin-top: -6rem; */
     padding-top: 0px;
     padding: inherit;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main {
     align-items: center;
     text-align: center;
   }
-  main .lg-heading {
+  main .lg-heading,
+  main .dzenis {
     line-height: 1;
     margin-bottom: 1rem;
     font-size: 4.4rem;
@@ -701,12 +722,12 @@ i {
     transform: translate3d(0, 0, 0);
   }
   .menu-nav {
-    height: 75vh;
+    /* height: 100vh; */
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
-    height: 25vh;
+    /* height: 25vh; */
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
@@ -744,9 +765,15 @@ i {
   main #home h1 {
     margin-top: 100vh;
   }
-  main .lg-heading {
-    /* margin-top: 10rem; */
+  main > h2 {
+    font-size: 1rem;
+  }
+  main .lg-heading,
+  main .dzenis {
     font-size: 4rem;
+  }
+  main .icons a {
+    padding: 1.5rem;
   }
   ul li {
     text-align: left;

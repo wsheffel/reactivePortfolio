@@ -18,11 +18,11 @@ const Home = () => {
           <div className="parts"></div>
         </div>
 
-        <h1 className="lg-heading text">
-          Dzenis
+        <h1 className="dzenis specialFont text textShadow">
+          <span className="specialFont"></span> Dzenis
           <i className="text-secondary"> H.</i>
         </h1>
-        <h2 className="text">
+        <h2 className="text textShadow">
           <i>
             Competent <span className="text-secondary">Full Stack</span> Web
             Developer

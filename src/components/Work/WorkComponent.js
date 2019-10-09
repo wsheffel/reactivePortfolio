@@ -44,9 +44,9 @@ class Work extends Component {
     return (
       <div>
         <main id="work">
-          <h1 className="lg-heading">
+          <h1 className="lg-heading textShadow">
             My
-            <i className="text-secondary"> Work</i>
+            <i className="text-secondary textShadow"> Work</i>
           </h1>
 
           <ModalVideo
@@ -70,10 +70,11 @@ class Work extends Component {
             <HighlightedList openVideo={this.openVideoModal} />
           </div>
 
-          <div className="text-secondary otherApps textShadow">
-            <h3 style={{ textShadow: "2px 2px black" }}>
-              I build software every day. Here's a nice collection of some of my
-              other apps, in no particular order:
+          <div className="text-secondary otherApps">
+            <hr />
+            <h3 className="specialFont bold textShadow">
+              I develop software every day. Below is a list of some of my other
+              passion projects:{" "}
             </h3>
             <hr />
           </div>
@@ -101,7 +102,7 @@ class Work extends Component {
                 mainLink="https://reactive-movies.firebaseapp.com/"
                 github="https://github.com/BiggaHD/reactive_movies_db"
                 name="Reactive Movie DB"
-                description="Web app that uses TMDb API 🎬"
+                description="A fast and beautiful web app that uses the TMDb API 🎬"
               />
             </div>
 
@@ -131,7 +132,7 @@ class Work extends Component {
                 mainLink="http://idea--x.herokuapp.com/"
                 github="https://github.com/BiggaHD/IDEA_x"
                 name="idea_X"
-                description="Ideas for your next coding project 💡"
+                description="Save ideas for your next coding project 💡"
               />
             </div>
 
@@ -226,7 +227,7 @@ class Work extends Component {
                 mainLink="https://ng-sports-store.web.app"
                 github="https://github.com/BiggaHD/Balkan-Sports-Store"
                 name="Balkan Sports Store"
-                description="his was my first take on Angular 🏀"
+                description="This was my first take on Angular 🏀"
               />
             </div>
 
@@ -262,7 +263,7 @@ class Work extends Component {
                 mainLink="https://bigga-share.herokuapp.com/"
                 github="https://github.com/BiggaHD/bigga_file_uploads"
                 name="Bigga File Uploads"
-                description="Simple 2 Way Data Transfer 🌀"
+                description="2 way data transfer of various file types w/ preview 🌀"
               />
             </div>
           </div>

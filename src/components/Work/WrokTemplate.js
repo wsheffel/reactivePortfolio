@@ -24,7 +24,7 @@ const WrokTemplate = props => {
         aria-label="developers"
         style={{ textAlign: "center", letterSpacing: "4px" }}
       >
-        <span className="text-secondary">
+        <span className="text-secondary textShadow">
           <b>{props.name}</b>
         </span>
         <br />
