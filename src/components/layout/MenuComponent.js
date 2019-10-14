@@ -53,34 +53,36 @@ class Menu extends Component {
             <div className="btn-line"></div>
             <div className="btn-line"></div>
           </div>
-
-          {showMenu === true ? (
+          {showMenu ? (
             <nav className={menu}>
               <div className={menuBranding}>
                 <div className="portrait"></div>
               </div>
-              <ul className={menuNav} onClick={this.toggleMenu.bind(this)}>
-                <li className={navItems}>
-                  <Link to="/" className="nav-link">
-                    Home
-                  </Link>
-                </li>
-                <li className={navItems}>
-                  <Link to="/about" className="nav-link">
-                    About
-                  </Link>
-                </li>
-                <li className={navItems}>
-                  <Link to="/work" className="nav-link">
-                    Work
-                  </Link>
-                </li>
-                <li className={navItems}>
-                  <Link to="/contact" className="nav-link">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+
+              <div className={menuNav} onClick={e => e.stopPropagation()}>
+                <ul onClick={this.toggleMenu}>
+                  <li className={navItems}>
+                    <Link to="/" className="nav-link">
+                      Home
+                    </Link>
+                  </li>
+                  <li className={navItems}>
+                    <Link to="/about" className="nav-link">
+                      About
+                    </Link>
+                  </li>
+                  <li className={navItems}>
+                    <Link to="/work" className="nav-link">
+                      Work
+                    </Link>
+                  </li>
+                  <li className={navItems}>
+                    <Link to="/contact" className="nav-link">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </nav>
           ) : null}
         </header>

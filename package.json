@@ -6,6 +6,7 @@
   "author": "Dzenis H.",
   "homepage": "https://dzenis-h.com",
   "dependencies": {
+    "axios": "^0.19.0",
     "react": "^16.9.0",
     "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.9.0",

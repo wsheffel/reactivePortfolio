@@ -194,6 +194,10 @@ body {
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
 }
+.menu-nav ul li {
+  list-style-type: none;
+}
+
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
 }
