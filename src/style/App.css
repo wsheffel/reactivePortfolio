@@ -3,6 +3,7 @@
 
 @import url("./additionalStyles.css");
 @import url("./animations.css");
+@import url("./formStyle.css");
 
 .dzenis {
   font-size: 6rem;

@@ -9,8 +9,9 @@ import Footer from "./components/layout/FooterComponent";
 import Menu from "./components/layout/MenuComponent";
 
 import "./style/App.css";
+import "react-toastify/dist/ReactToastify.css";
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <Router>
@@ -25,6 +26,6 @@ function App() {
       </Router>
     </Fragment>
   );
-}
+};
 
 export default App;
