@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import formUrl from "../config/form-url";
 
 const Contact = () => {
   const [userInput, setUserInput] = useReducer(
@@ -26,9 +27,9 @@ const Contact = () => {
 
   const sendData = e => {
     e.preventDefault();
-    const url = "http://localhost:5050/form-data"; // The endpoint
-    axios // Make the request
-      .post(url, { formData: userInput })
+    // const url = ; // The endpoint
+    axios // Make the request to the backend
+      .post(formUrl, { formData: userInput }) // e.g. "http://localhost:5050/form-data"
       .then(res => console.log(res.data.msg))
       .then(success())
       .catch(err => console.error(err));
@@ -136,6 +137,7 @@ const Contact = () => {
                   rows="5"
                   value={userInput.firstName}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </p>
               <p className="full">

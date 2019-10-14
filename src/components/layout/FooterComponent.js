@@ -5,17 +5,15 @@ const Footer = () => {
     <Fragment>
       <footer id="footer">
         <article id="wrap" className="text-center">
-          <p className="display-6 text-center text-info mt-5">
-            Dzenis H.
-            <span role="img" aria-label="dash" className="text-center">
-              ➖
-            </span>
-            Portfolio
-            <span role="img" aria-label="dash" className="text-center">
-              ➖
-            </span>
-            Copyright © 2019
-          </p>
+          <div className="footer-text">
+            <p className="textShadow">Dzenis H. </p>
+            <p className="textShadow">Portfolio </p>
+            <p className="textShadow">
+              {" "}
+              Copyright © {new Date().getFullYear()}
+            </p>
+          </div>
+
           <article id="lightings">
             <section id="one">
               <section id="two">

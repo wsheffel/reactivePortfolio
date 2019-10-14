@@ -2,6 +2,8 @@
 
 # firebase files
 
+src/config/form-url.js
+
 firebase.json
 .firebaserc
 .firebase

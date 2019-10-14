@@ -60,24 +60,36 @@ class Menu extends Component {
               </div>
 
               <div className={menuNav} onClick={e => e.stopPropagation()}>
-                <ul onClick={this.toggleMenu}>
+                <ul>
                   <li className={navItems}>
-                    <Link to="/" className="nav-link">
+                    <Link to="/" className="nav-link" onClick={this.toggleMenu}>
                       Home
                     </Link>
                   </li>
                   <li className={navItems}>
-                    <Link to="/about" className="nav-link">
+                    <Link
+                      to="/about"
+                      className="nav-link"
+                      onClick={this.toggleMenu}
+                    >
                       About
                     </Link>
                   </li>
                   <li className={navItems}>
-                    <Link to="/work" className="nav-link">
+                    <Link
+                      to="/work"
+                      className="nav-link"
+                      onClick={this.toggleMenu}
+                    >
                       Work
                     </Link>
                   </li>
                   <li className={navItems}>
-                    <Link to="/contact" className="nav-link">
+                    <Link
+                      to="/contact"
+                      className="nav-link"
+                      onClick={this.toggleMenu}
+                    >
                       Contact
                     </Link>
                   </li>
