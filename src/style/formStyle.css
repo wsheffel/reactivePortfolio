@@ -1,8 +1,31 @@
-/* Custom react toastify styles (overwritting existing ones) */
 /* @import url("https://fonts.googleapis.com/css?family=Cinzel|Monoton|Roboto&display=swap"); */
 
+/* Styling og the placholder elements - very specific approach */
+
+input[name="email"]::-webkit-input-placeholder,
+input[name="name"]::-webkit-input-placeholder,
+textarea[name="message"]::-webkit-input-placeholder {
+  color: #b39804;
+  font-family: "Roboto", cursive;
+  font-weight: 700;
+}
+
+input[name="company"]::-webkit-input-placeholder,
+input[name="phone"]::-webkit-input-placeholder {
+  color: grey;
+  font-family: "Roboto", cursive;
+  font-weight: 700;
+}
+
+#contact-form label {
+  font-family: "Cinzel", cursive;
+}
+
+/* Custom React toastify styles (overwritting existing ones) */
 .myToast {
-  color: black;
+  color: #000;
+  font-family: "Cinzel", cursive;
+  font-weight: 600;
 }
 
 .Toastify__toast--warning {

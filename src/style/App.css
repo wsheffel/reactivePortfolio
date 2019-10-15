@@ -768,7 +768,6 @@ i {
 @media (max-width: 767px) and (orientation: landscape) {
   .menu .nav-link {
     font-size: 1.4rem;
-    /* font-family: "Canzil", cursive; */
     padding: 0.2rem;
     margin: auto;
   }

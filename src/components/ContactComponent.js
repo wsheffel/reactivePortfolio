@@ -1,39 +1,56 @@
-import React, { useReducer } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
-import formUrl from "../config/form-url";
+import formUrl from "../config/form-url"; // The endpoint
 
 const Contact = () => {
-  const [userInput, setUserInput] = useReducer(
-    (state, newState) => ({ ...state, ...newState }),
-    {
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: ""
-    }
-  );
+  const initialState = {
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: ""
+  };
 
-  const success = () =>
-    toast.warning("Form successfully submitted", {
-      // autoClose: 2000,
-      className: "myToast"
-    });
+  const [userInput, setUserInput] = useState(initialState);
+
+  // My custom toast
+  const success = () => {
+    toast.warning(() => (
+      <div className="myToast">
+        <p>
+          {" "}
+          Thank you for reaching out{" "}
+          <span role="img" aria-label="text">
+            👍
+          </span>
+        </p>
+        <span style={{ float: "right" }} role="img" aria-label="author">
+          <b>-</b> Dzenis
+        </span>
+      </div>
+    ));
+  };
 
   const handleChange = e => {
-    setUserInput({ [e.target.name]: e.target.value });
+    setUserInput({ ...userInput, [e.target.name]: e.target.value });
+  };
+
+  const resetForm = () => {
+    setUserInput({ ...initialState });
   };
 
   const sendData = e => {
     e.preventDefault();
-    // const url = ; // The endpoint
     axios // Make the request to the backend
       .post(formUrl, { formData: userInput }) // e.g. "http://localhost:5050/form-data"
       .then(res => console.log(res.data.msg))
-      .then(success())
-      .catch(err => console.error(err));
+      .then(resetForm()) // Reset the form
+      .then(success()) // Show the toast
+      .catch(err => console.error(err)); // Catch any error
   };
+
+  const { name, company, phone, email, message } = userInput;
 
   return (
     <main id="contact">
@@ -97,9 +114,10 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  required
-                  value={userInput.firstName}
+                  value={name}
                   onChange={handleChange}
+                  required
+                  placeholder="REQUIRED"
                 />
               </p>
               <p>
@@ -107,8 +125,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="company"
-                  value={userInput.firstName}
+                  value={company}
                   onChange={handleChange}
+                  placeholder="OPTIONAL"
                 />
               </p>
               <p>
@@ -116,9 +135,10 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  value={userInput.firstName}
+                  value={email}
                   onChange={handleChange}
                   required
+                  placeholder="REQUIRED"
                 />
               </p>
               <p>
@@ -126,8 +146,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="phone"
-                  value={userInput.firstName}
+                  value={phone}
                   onChange={handleChange}
+                  placeholder="OPTIONAL"
                 />
               </p>
               <p className="full">
@@ -135,13 +156,14 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows="5"
-                  value={userInput.firstName}
+                  value={message}
                   onChange={handleChange}
                   required
+                  placeholder="REQUIRED"
                 ></textarea>
               </p>
               <p className="full">
-                <button>Submit</button>
+                <button type="submit">Submit</button>
               </p>
             </form>
           </div>
