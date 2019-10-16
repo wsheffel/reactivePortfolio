@@ -9,6 +9,7 @@ firebase.json
 .firebase
 firebase-debug.log
 debug.log
+debug
 
 # dependencies
 /node_modules

@@ -14,6 +14,24 @@ const Contact = () => {
 
   const [userInput, setUserInput] = useState(initialState);
 
+  const handleChange = e => {
+    // onChange handler
+    setUserInput({ ...userInput, [e.target.name]: e.target.value });
+  };
+
+  const resetForm = () => {
+    setUserInput({ ...initialState }); // Reset the form to the 'initialState'
+  };
+
+  const sendData = e => {
+    e.preventDefault();
+    axios // Make the request to the backend
+      .post(formUrl, { formData: userInput }) // e.g. "http://localhost:5050/form-data"
+      .then(res => success()) // If we got the response, show the 'success' toast
+      .catch(err => failed()) // Catch any error and show he 'error' toast
+      .finally(resetForm()); // Reset the form, errors, responseData
+  };
+
   // My custom toast
   const success = () => {
     toast.warning(() => (
@@ -32,22 +50,18 @@ const Contact = () => {
     ));
   };
 
-  const handleChange = e => {
-    setUserInput({ ...userInput, [e.target.name]: e.target.value });
-  };
-
-  const resetForm = () => {
-    setUserInput({ ...initialState });
-  };
-
-  const sendData = e => {
-    e.preventDefault();
-    axios // Make the request to the backend
-      .post(formUrl, { formData: userInput }) // e.g. "http://localhost:5050/form-data"
-      .then(res => console.log(res.data.msg))
-      .then(resetForm()) // Reset the form
-      .then(success()) // Show the toast
-      .catch(err => console.error(err)); // Catch any error
+  const failed = () => {
+    toast.error(() => (
+      <div className="myToast">
+        <p>
+          {" "}
+          Network error, please try again later{" "}
+          <span role="img" aria-label="text">
+            😥
+          </span>
+        </p>
+      </div>
+    ));
   };
 
   const { name, company, phone, email, message } = userInput;
@@ -168,7 +182,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <ToastContainer autoClose={3000} closeOnClick />
+        <ToastContainer autoClose={4000} closeOnClick />
       </div>
     </main>
   );
