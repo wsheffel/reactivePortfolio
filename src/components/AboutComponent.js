@@ -106,7 +106,7 @@ const About = () => {
             <h5>
               Technologies that I'm familiar with, practice and use daily:
             </h5>
-            <ul>
+            <ul className="firstStack">
               <li>
                 <b className="text-secondary">HTML5 </b>
                 <i>[for a semi to fully dynamic sites/ apps]</i>
@@ -161,14 +161,10 @@ const About = () => {
             <h5>
               Some of additional tools and libraries that I use regularly:
             </h5>
-            <ul>
+            <ul className="secondStack">
               <li>
                 <b className="text-secondary">Git </b>
                 <i>[as my version control system]</i>
-              </li>
-              <li>
-                <b className="text-secondary">jQuery </b>
-                <i>[as the main helper library]</i>
               </li>
               <li>
                 <b className="text-secondary">Webpack </b>
@@ -185,15 +181,15 @@ const About = () => {
               </li>
               <li>
                 <b className="text-secondary">Postman </b>
-                <i>[as my API development/ testing tool]</i>
+                <i>[as my API development testing tool]</i>
               </li>
               <li>
                 <b className="text-secondary">Loadash </b>
                 <i>[often required as my helper library]</i>
               </li>
               <li>
-                <b className="text-secondary">Mocha </b>
-                <i>[whenever testing is mandatory]</i>
+                <b className="text-secondary">Jest, Enzyme, Mocha </b>
+                <i>[as my testing utilities]</i>
               </li>
               <li>
                 <b className="text-secondary">EJS/ HBS </b>
