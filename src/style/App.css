@@ -5,6 +5,14 @@
 @import url("./animations.css");
 @import url("./formStyle.css");
 
+@font-face {
+  font-family: "Bungee Hairline";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bungee Hairline"),
+    url("../assets/fonts/BungeeHairline-Regular.ttf") format("truetype");
+}
+
 .dzenis {
   font-size: 6rem;
   font-weight: bolder;
@@ -18,7 +26,7 @@
 }
 
 .secondStack li {
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .specialFont {
@@ -59,7 +67,7 @@ main#home {
   background-size: cover;
   position: relative;
   z-index: 1;
-  background-image: url("../img/background.jpeg");
+  background-image: url("../assets/img/background.jpeg");
 }
 
 main#home::before {
@@ -216,7 +224,7 @@ body {
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/portrait.jpg");
+  background: url("../assets/img/portrait.jpg");
   border-radius: 50%;
   border: solid 3px #eece1a;
 }
@@ -742,7 +750,7 @@ i {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/portrait_small.jpg");
+    background: url("../assets/img/portrait_small.jpg");
     width: 150px;
     height: 150px;
   }

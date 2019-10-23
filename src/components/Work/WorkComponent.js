@@ -9,23 +9,23 @@ import HighlightedHeader from "./Highlighted/HighlightedHeader";
 import HighlightedDescription from "./Highlighted/HighlightedDescription";
 import HighlightedList from "./Highlighted/HighlightedList";
 
-import p1 from "../../img/projects/p1.JPG";
-import p2 from "../../img/projects/p2.png";
-import p3 from "../../img/projects/p3.png";
-import p5 from "../../img/projects/p5.png";
-import p6 from "../../img/projects/p6.png";
-import p7 from "../../img/projects/p7.jpg";
-import p8 from "../../img/projects/p8.jpg";
-import p9 from "../../img/projects/p9.jpg";
-import p10 from "../../img/projects/p10.JPG";
-import p11 from "../../img/projects/p11.jpg";
-import p12 from "../../img/projects/p12.jpg";
-import p13 from "../../img/projects/p13.jpg";
-import p14 from "../../img/projects/p14.png";
-import p15 from "../../img/projects/p15.png";
-import p16 from "../../img/projects/p16.png";
-import p17 from "../../img/projects/p17.png";
-import p18 from "../../img/projects/p18.jpg";
+import p1 from "../../assets/img/projects/p1.jpg";
+import p2 from "../../assets/img/projects/p2.jpg";
+import p3 from "../../assets/img/projects/p3.jpg";
+import p5 from "../../assets/img/projects/p5.jpg";
+import p6 from "../../assets/img/projects/p6.jpg";
+import p7 from "../../assets/img/projects/p7.jpg";
+import p8 from "../../assets/img/projects/p8.jpg";
+import p9 from "../../assets/img/projects/p9.jpg";
+import p10 from "../../assets/img/projects/p10.jpg";
+import p11 from "../../assets/img/projects/p11.jpg";
+import p12 from "../../assets/img/projects/p12.jpg";
+import p13 from "../../assets/img/projects/p13.jpg";
+import p14 from "../../assets/img/projects/p14.jpg";
+import p15 from "../../assets/img/projects/p15.jpg";
+import p16 from "../../assets/img/projects/p16.jpg";
+import p17 from "../../assets/img/projects/p17.jpg";
+import p18 from "../../assets/img/projects/p18.jpg";
 
 class Work extends Component {
   constructor() {

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Portrait from "../img/portrait.jpg";
+import Portrait from "../assets/img/portrait.jpg";
 
 const About = () => {
   return (
