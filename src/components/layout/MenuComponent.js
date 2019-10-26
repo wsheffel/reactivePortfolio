@@ -23,12 +23,12 @@ class Menu extends Component {
         menu: "menu show",
         menuNav: "menu-nav show",
         menuBranding: "menu-branding show",
-        navItems: "nav-item show"
+        navItems: "nav-item show wrapper animated bounceInLeft"
       });
     } else {
       this.setState({
         showMenu: false,
-        // Pulse effect & 'MENU' text is opnly going to be
+        // Pulse effect & 'MENU' text is only going to be
         // present until the user finds/ clicks the MENU btn
         menuBtn: "menu-btn blob yellow"
       });
@@ -56,7 +56,7 @@ class Menu extends Component {
           {showMenu ? (
             <nav className={menu}>
               <div className={menuBranding}>
-                <div className="portrait"></div>
+                <div className="portrait wrapper animated bounceInRight"></div>
               </div>
 
               <div className={menuNav} onClick={e => e.stopPropagation()}>

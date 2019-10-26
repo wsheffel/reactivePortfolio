@@ -8,8 +8,8 @@ firebase.json
 .firebaserc
 .firebase
 firebase-debug.log
-debug.log
-./debug.log
+
+.log*
 
 # dependencies
 /node_modules
@@ -34,3 +34,6 @@ desktop.ini
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+debug.log*
+./debug.log
+.log*
