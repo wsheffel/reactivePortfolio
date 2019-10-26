@@ -1,7 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Portrait from "../assets/img/portrait.jpg";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About me"; // making the document title dynamic
+  }, []);
+
   return (
     <Fragment>
       <main id="about">

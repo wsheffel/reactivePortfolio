@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import formUrl from "../config/form-url"; // The endpoint
@@ -13,6 +13,10 @@ const Contact = () => {
   };
 
   const [userInput, setUserInput] = useState(initialState);
+
+  useEffect(() => {
+    document.title = "Contact me"; // making the document title dynamic
+  }, []);
 
   const handleChange = e => {
     // onChange handler

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import ModalVideo from "react-modal-video";
 import ImageComponent from "../helper/ImageComponent";
 
@@ -38,6 +39,10 @@ class Work extends Component {
 
   openVideoModal() {
     this.setState({ videoOpen: true });
+  }
+
+  componentDidMount() {
+    document.title = "My work"; // making the document title dynamic
   }
 
   render() {

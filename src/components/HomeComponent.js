@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 
 const Home = () => {
   setTimeout(() => {
@@ -10,6 +10,10 @@ const Home = () => {
       );
     })();
   }, 200);
+
+  useEffect(() => {
+    document.title = "Dzenis H."; // making the document title dynamic
+  }, []);
 
   return (
     <Fragment>

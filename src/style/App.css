@@ -13,6 +13,11 @@
     url("../assets/fonts/BungeeHairline-Regular.ttf") format("truetype");
 }
 
+/* Remove that nasty blue-ish outline */
+button:focus {
+  outline: 0;
+}
+
 .dzenis {
   font-size: 6rem;
   font-weight: bolder;
@@ -700,7 +705,7 @@ i {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1170px) {
+@media screen and (min-width: 768px) and (max-width: 1171px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
