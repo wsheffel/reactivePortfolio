@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LazyLoad from "react-lazyload";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import ModalVideo from "react-modal-video";
 import ImageComponent from "../helper/ImageComponent";
@@ -55,7 +55,11 @@ const Work = () => {
 
         <div className="highlightedProject">
           <div className="item">
-            <ImageComponent img={p1} title="Mars EMS" />
+            {/* Lazy loading HOC that works as it should ... */}
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
+              <ImageComponent img={p1} title="Mars EMS" />
+            </LazyLoadComponent>
+
             <HighlightedApp
               mainLink="https://hr-ems.herokuapp.com/index.html"
               github="https://github.com/BiggaHD/Mars-EMS"
@@ -76,13 +80,13 @@ const Work = () => {
 
         <div className="projects">
           <div className="item">
-            <LazyLoad>
-              {/* Lazy loading HOC that works as it should ... */}
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p7}
                 title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://dev--spot.herokuapp.com/"
               github="https://github.com/BiggaHD/devSpot"
@@ -92,9 +96,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p6} title="reactive_movies" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://reactive-movies.firebaseapp.com/"
               github="https://github.com/BiggaHD/reactive_movies_db"
@@ -104,9 +109,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p15} title="Reactive RSS" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://reactive-rss-d3f9c.web.app"
               github="https://github.com/BiggaHD/Reactive-RSS"
@@ -116,9 +122,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p5} title="miniStories" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="http://mini--stories.herokuapp.com/"
               github="https://github.com/BiggaHD/miniStories"
@@ -128,9 +135,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p3} title="idea_x" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="http://idea--x.herokuapp.com/"
               github="https://github.com/BiggaHD/IDEA_x"
@@ -140,9 +148,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p17} title="client-panel" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://client-panel-2019.firebaseapp.com/"
               github="https://github.com/BiggaHD/client-panel"
@@ -152,9 +161,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p16} title="iZEN" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://izen-250312.firebaseapp.com/"
               github="https://github.com/BiggaHD/iZEN"
@@ -164,12 +174,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p8}
                 title="Build using React 16 + Redux --> It uses 'Open Weather API to display search results of temperatures of your favourite cities using visual graphs"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://reactive-clima.web.app/"
               github="https://github.com/BiggaHD/reactive-clima"
@@ -179,12 +190,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p9}
                 title="This was the time when I switched from Angular to React"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://reactive-tube.web.app/"
               github="https://github.com/BiggaHD/Reactive-tube"
@@ -194,12 +206,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p10}
                 title="My sesocnd Angular app that tracks your recipes and shopping list as well"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://ng-recipes-f4e6c.firebaseapp.com/"
               github="https://github.com/BiggaHD/Balkan_Recipe_Book"
@@ -209,12 +222,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p14}
                 title="Create a profile, build the burger you like, order it, enjoy"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://reactive-hamburger.web.app/"
               github="https://github.com/BiggaHD/Reactive-Burger"
@@ -224,9 +238,10 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p18} title="Example Website" />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://evolwe-example-site.firebaseapp.com/"
               github="https://github.com/BiggaHD/evolWE"
@@ -236,12 +251,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p11}
                 title="When I first started using Angular 2+"
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://ng-sports-store.web.app"
               github="https://github.com/BiggaHD/Balkan-Sports-Store"
@@ -251,12 +267,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p12}
                 title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://web-calorie-tracker.firebaseapp.com/"
               github="https://github.com/BiggaHD/Calorie_Tracker"
@@ -266,12 +283,13 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent
                 img={p13}
                 title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
               />
-            </LazyLoad>
+            </LazyLoadComponent>
+
             <WrokTemplate
               mainLink="https://web-loan-calculator.firebaseapp.com/"
               github="https://github.com/BiggaHD/Loan-Calculator-2.0"
@@ -281,9 +299,9 @@ const Work = () => {
           </div>
 
           <div className="item">
-            <LazyLoad>
+            <LazyLoadComponent placeholder={<div className="loader"></div>}>
               <ImageComponent img={p2} title="Bigga File Uploads" />
-            </LazyLoad>
+            </LazyLoadComponent>
 
             <WrokTemplate
               mainLink="https://bigga-share.herokuapp.com/"
