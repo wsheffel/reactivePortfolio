@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 
-const WrokTemplate = props => {
+const WrokTemplate = ({ mainLink, github, name, description }) => {
   return (
     <Fragment>
       <a
-        href={props.mainLink}
+        href={mainLink}
         target="_blank"
         rel="noopener noreferrer"
         className="btn-light"
@@ -12,7 +12,7 @@ const WrokTemplate = props => {
         <i className="fas fa-eye" /> Live preview
       </a>
       <a
-        href={props.github}
+        href={github}
         target="_blank"
         className="btn-dark"
         rel="noopener noreferrer"
@@ -25,10 +25,10 @@ const WrokTemplate = props => {
         style={{ textAlign: "center", letterSpacing: "4px" }}
       >
         <span className="text-secondary textShadow">
-          <b>{props.name}</b>
+          <b>{name}</b>
         </span>
         <br />
-        {props.description}
+        {description}
       </p>
     </Fragment>
   );

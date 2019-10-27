@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Local_Setup from "../../../documents/Local_Setup.pdf";
 
-const HighlightedList = props => {
+const HighlightedList = ({ openVideo }) => {
   return (
     <Fragment>
       <ul
@@ -50,7 +50,7 @@ const HighlightedList = props => {
             href="#!"
             id="video"
             className="icons textShadow"
-            onClick={props.openVideo}
+            onClick={openVideo}
           >
             <i className="fab fa-youtube fa-2x" />
             Watch Video Preview

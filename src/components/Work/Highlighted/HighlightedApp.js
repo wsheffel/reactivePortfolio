@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 
-const HighlightedApp = props => {
+const HighlightedApp = ({ mainLink, github }) => {
   return (
     <Fragment>
       <a
-        href={props.mainLink}
+        href={mainLink}
         target="_blank"
         rel="noopener noreferrer"
         className="btn-light"
@@ -12,7 +12,7 @@ const HighlightedApp = props => {
         <i className="fas fa-eye" /> Live preview
       </a>
       <a
-        href={props.github}
+        href={github}
         target="_blank"
         rel="noopener noreferrer"
         className="btn-dark"

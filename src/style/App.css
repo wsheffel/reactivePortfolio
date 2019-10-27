@@ -102,7 +102,7 @@ li a:hover {
   padding: 0rem 2rem;
 }
 
-.image {
+.openImageModal {
   width: 500px;
   height: 500px;
 }
@@ -393,14 +393,11 @@ header {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .projects img {
   width: 100%;
   border: 3px #fff solid;
 }
-/* .projects img:hover { */
-/* opacity: 0.5; */
-/* border-color: #eece1a; */
-/* transition: all 0.5s ease-out; } */
 
 .boxes {
   display: flex;

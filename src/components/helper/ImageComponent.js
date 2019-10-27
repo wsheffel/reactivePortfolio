@@ -1,16 +1,15 @@
 import React, { Fragment, useState } from "react";
 import Modal from "react-awesome-modal";
 
-// Let me use a HOOK here :)
-const ImageComponent = props => {
+const ImageComponent = ({ img, title }) => {
   const [isOpen, handleShowDialog] = useState(false);
   return (
     <Fragment>
       <img
         style={{ cursor: "pointer" }}
-        src={props.img}
+        src={img}
+        alt={title}
         onClick={() => handleShowDialog(!isOpen)}
-        alt={props.title}
       />
       <Modal
         visible={isOpen}
@@ -18,10 +17,10 @@ const ImageComponent = props => {
         onClickAway={() => handleShowDialog(!isOpen)}
       >
         <img
-          className="image"
-          src={props.img}
+          className="openImageModal"
+          src={img}
           onClick={() => handleShowDialog(!isOpen)}
-          alt={props.title}
+          alt={title}
         />
       </Modal>
     </Fragment>
