@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import Portrait from "../assets/img/portrait.jpg";
+import Portrait from "../assets/img/portrait.webp";
 
 const About = () => {
   useEffect(() => {
@@ -131,7 +131,7 @@ const About = () => {
               </li>
               <li>
                 <b className="text-secondary">Redux </b>
-                <i>[for a better state management]</i>
+                <i>[for better state management]</i>
               </li>
               <li>
                 <b className="text-secondary">NodeJS </b>
@@ -153,7 +153,7 @@ const About = () => {
               </li>
               <li>
                 <b className="text-secondary">Sass </b>
-                <i>[when CSS is just not enough]</i>
+                <i>[when CSS is not enough]</i>
               </li>
             </ul>
           </div>
@@ -197,7 +197,7 @@ const About = () => {
               </li>
               <li>
                 <b className="text-secondary">EJS/ HBS </b>
-                <i>[when all focuse is on the backend]</i>
+                <i>[when all focus is on the backend]</i>
               </li>
             </ul>
           </div>
@@ -211,20 +211,20 @@ const About = () => {
             </h3>
             <h5>
               Technology that I'm currently most focused on:
-              <b className="text-secondary"> NodeJS.</b> <br />
-              Language that I'm familiar with, but don't use often:
+              <b className="text-secondary"> NodeJS.</b> <br />A language that
+              I'm familiar with, but don't often use:
               <b className="text-secondary"> Java.</b> <br />
-              Language I would like to work with in the future:
+              The language I would like to work with in the future:
               <b className="text-secondary"> Python.</b>
             </h5>
             <hr />
             <h5 style={{ marginTop: "0.2rem" }}>
-              When I'm not coding, learning new skills, or advancing the
-              existing ones, I'm doing one of the following:
+              When I'm not coding, learning new programming skills, or advancing
+              the existing ones, I'm doing one of the following:
             </h5>
             <ul>
               <li>
-                <i>Practicing meditation & healthy lifestyle.</i>
+                <i>Practising meditation & healthy lifestyle.</i>
               </li>
               <li>
                 <i>Extensively listening to audiobooks.</i>
