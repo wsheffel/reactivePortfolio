@@ -26,6 +26,26 @@ import p16 from "../../assets/img/projects/p16.webp";
 import p17 from "../../assets/img/projects/p17.webp";
 import p18 from "../../assets/img/projects/p18.webp";
 
+// BACKUP IMAGES FOR OLDER BROWSER
+
+import j1 from "../../assets/backup/p1.jpg";
+import j2 from "../../assets/backup/p2.jpg";
+import j3 from "../../assets/backup/p3.jpg";
+import j5 from "../../assets/backup/p5.jpg";
+import j6 from "../../assets/backup/p6.jpg";
+import j7 from "../../assets/backup/p7.jpg";
+import j8 from "../../assets/backup/p8.jpg";
+import j9 from "../../assets/backup/p9.jpg";
+import j10 from "../../assets/backup/p10.jpg";
+import j11 from "../../assets/backup/p11.jpg";
+import j12 from "../../assets/backup/p12.jpg";
+import j13 from "../../assets/backup/p13.jpg";
+import j14 from "../../assets/backup/p14.jpg";
+import j15 from "../../assets/backup/p15.jpg";
+import j16 from "../../assets/backup/p16.jpg";
+import j17 from "../../assets/backup/p17.jpg";
+import j18 from "../../assets/backup/p18.jpg";
+
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 
 const Work = () => {
@@ -56,7 +76,7 @@ const Work = () => {
           <div className="item">
             {/* Removed 3rd party package and implemented React.lazy && Suspense */}
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p1} title="Mars EMS" />
+              <ImageComponent webp={p1} jpg={j1} title="Mars EMS" />
             </Suspense>
 
             <HighlightedApp
@@ -81,7 +101,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p7}
+                webp={p7}
+                jpg={j7}
                 title="It's a full stack app that uses a enormous tech stack -> My little versoion of SO :)"
               />
             </Suspense>
@@ -96,7 +117,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p6} title="reactive_movies" />
+              <ImageComponent webp={p6} jpg={j6} title="reactive_movies" />
             </Suspense>
 
             <WrokTemplate
@@ -109,7 +130,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p15} title="Reactive RSS" />
+              <ImageComponent webp={p15} jpg={j15} title="Reactive RSS" />
             </Suspense>
 
             <WrokTemplate
@@ -122,7 +143,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p5} title="miniStories" />
+              <ImageComponent webp={p5} jpg={j5} title="miniStories" />
             </Suspense>
 
             <WrokTemplate
@@ -135,7 +156,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p3} title="idea_x" />
+              <ImageComponent webp={p3} jpg={j3} title="idea_x" />
             </Suspense>
 
             <WrokTemplate
@@ -148,7 +169,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p17} title="client-panel" />
+              <ImageComponent webp={p17} jpg={j17} title="client-panel" />
             </Suspense>
 
             <WrokTemplate
@@ -161,7 +182,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p16} title="iZEN" />
+              <ImageComponent webp={p16} jpg={j16} title="iZEN" />
             </Suspense>
 
             <WrokTemplate
@@ -175,7 +196,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p8}
+                webp={p8}
+                jpg={j8}
                 title="Build using React 16 + Redux --> It uses 'Open Weather API to display search results of temperatures of your favourite cities using visual graphs"
               />
             </Suspense>
@@ -191,7 +213,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p9}
+                webp={p9}
+                jpg={j9}
                 title="This was the time when I switched from Angular to React"
               />
             </Suspense>
@@ -207,7 +230,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p10}
+                webp={p10}
+                jpg={j10}
                 title="My sesocnd Angular app that tracks your recipes and shopping list as well"
               />
             </Suspense>
@@ -223,7 +247,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p14}
+                webp={p14}
+                jpg={j14}
                 title="Create a profile, build the burger you like, order it, enjoy"
               />
             </Suspense>
@@ -238,7 +263,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p18} title="Example Website" />
+              <ImageComponent webp={p18} jpg={j18} title="Example Website" />
             </Suspense>
 
             <WrokTemplate
@@ -252,7 +277,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p11}
+                webp={p11}
+                jpg={j11}
                 title="When I first started using Angular 2+"
               />
             </Suspense>
@@ -268,7 +294,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p12}
+                webp={p12}
+                jpg={j12}
                 title="It's Calorie tracker that saves your data into LS. It's made with pure vanilla JavaScript using the 'Module Pattern', ES6 features, Materialize CSS and Font Awesome for styling."
               />
             </Suspense>
@@ -284,7 +311,8 @@ const Work = () => {
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
-                img={p13}
+                webp={p13}
+                jpg={j13}
                 title="Loan Calculator that will determine your estimated payments for loan amounts, interest rates and terms."
               />
             </Suspense>
@@ -299,7 +327,7 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent img={p2} title="Bigga File Uploads" />
+              <ImageComponent webp={p2} jpg={j2} title="Bigga File Uploads" />
             </Suspense>
 
             <WrokTemplate

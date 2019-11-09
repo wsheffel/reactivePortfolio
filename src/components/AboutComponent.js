@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from "react";
-import Portrait from "../assets/img/portrait.webp";
+
+import webp_Portrait from "../assets/img/portrait.webp";
+import jpg_Portrait from "../assets/backup/portrait.jpg";
 
 const About = () => {
   useEffect(() => {
@@ -17,7 +19,14 @@ const About = () => {
           A brief insight into the compound but a pleasant person that makes me
         </h2>
         <div className="about-info">
-          <img src={Portrait} alt="Dzenis H." className="bio-image" />
+          <picture>
+            {/* If the browser supports WebP format use that*/}
+            <source srcSet={webp_Portrait} type="image/webp" />
+            {/* If NOT use the regular JPG foramt insted*/}
+            <source srcSet={jpg_Portrait} type="image/jpeg" />
+            {/* If the browser doesn't support the '<picture' tag use regular '<img> instead  */}
+            <img src={jpg_Portrait} alt="Dzenis H." className="bio-image" />
+          </picture>
 
           <div className="bio">
             <h3 className="text-secondary textShadow">Little Intro:</h3>
