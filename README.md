@@ -15,7 +15,7 @@ https://dzenis-h.com
 
 ### Achieved a perfect 100% on Google Lighthouse audit score:
 
-![Optimization](https://github.com/BiggaHD/reactivePortfolio/blob/master/100%25.png =500x500)
+![Optimization](https://github.com/BiggaHD/reactivePortfolio/blob/master/100%25.png)
 
 
 If you like what you see, give it a ⭐
