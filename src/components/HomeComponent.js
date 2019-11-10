@@ -22,11 +22,12 @@ const Home = () => {
         <div className="particles">
           <div className="parts"></div>
         </div>
-
-        <h1 className="dzenis specialFont text textShadow">
-          <span className="specialFont"></span> Dzenis
-          <i className="text-secondary"> H.</i>
-        </h1>
+        <div className="wrapper animated bounceInRight">
+          <h1 className="dzenis specialFont text textShadow">
+            <span className="specialFont"></span> Dzenis
+            <i className="text-secondary"> H.</i>
+          </h1>
+        </div>
         <h2 className="text textShadow">
           <i>
             Competent <span className="text-secondary">Full Stack</span> Web
@@ -38,6 +39,7 @@ const Home = () => {
             href="https://github.com/BiggaHD"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub account"
           >
             <i className="fab fa-github fa-2x" />
           </a>
@@ -45,6 +47,7 @@ const Home = () => {
             href="https://stackoverflow.com/users/8146571/bigga-hd"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="StackOverflow account"
           >
             <i className="fab fa-stack-overflow fa-2x" />
           </a>
@@ -52,6 +55,7 @@ const Home = () => {
             href="https://www.linkedin.com/in/dzenis-h/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn account"
           >
             <i className="fab fa-linkedin-in fa-2x" />
           </a>

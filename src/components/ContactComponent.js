@@ -90,6 +90,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/dzenis-h/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn link field"
                 >
                   <i className="fab fa-linkedin-in"></i>
                   Find me on LinkedIn
@@ -97,21 +98,24 @@ const Contact = () => {
               </li>
 
               <li className="xo">
-                <a href="mailto:dzenis.hankusic@gmail.com">
+                <a
+                  href="mailto:dzenis.hankusic@gmail.com"
+                  aria-label="Email field"
+                >
                   <i className="fas fa-at"></i>
                   Send me an Email
                 </a>
               </li>
 
               <li className="xo">
-                <a href="tel:00387603311015">
-                  <i className="fas fa-mobile-alt"> </i>
+                <a href="tel:00387603311015" aria-label="Phone number field">
+                  <i className="fas fa-mobile-alt"></i>
                   Call my Phone
                 </a>
               </li>
 
               <li className="xo">
-                <a href="skype:dzenis.hankusic?call">
+                <a href="skype:dzenis.hankusic?call" aria-label="Skype field">
                   <i className="fab fa-skype"></i>
                   Call me via Skype
                 </a>

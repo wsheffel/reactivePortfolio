@@ -1,6 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Cinzel|Monoton|Roboto&display=swap"); */
-
-/* Styling og the placholder elements - very specific approach */
+/* Styling of the placholder elements - very specific approach */
 
 input[name="email"]::-webkit-input-placeholder,
 input[name="name"]::-webkit-input-placeholder,

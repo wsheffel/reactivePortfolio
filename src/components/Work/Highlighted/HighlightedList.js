@@ -51,6 +51,7 @@ const HighlightedList = ({ openVideo }) => {
             id="video"
             className="icons textShadow"
             onClick={openVideo}
+            aria-label="Open the video demonstration"
           >
             <i className="fab fa-youtube fa-2x" />
             Watch Video Preview
@@ -62,6 +63,7 @@ const HighlightedList = ({ openVideo }) => {
             href={Local_Setup}
             className="icons textShadow"
             download="Local_Setup"
+            aria-label="Download the instructions"
           >
             <i className="fas fa-download fa-2x" /> Download Instructions
           </a>

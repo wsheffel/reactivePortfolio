@@ -8,6 +8,7 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="btn-light"
+        aria-label="Link for the deployed app"
       >
         <i className="fas fa-eye" /> Live preview
       </a>
@@ -16,6 +17,7 @@ const WrokTemplate = ({ mainLink, github, name, description }) => {
         target="_blank"
         className="btn-dark"
         rel="noopener noreferrer"
+        aria-label="Open gitHub repo for this program"
       >
         <i className="fab fa-github" /> Github repo
       </a>
