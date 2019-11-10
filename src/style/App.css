@@ -48,7 +48,6 @@ button:focus {
 }
 
 /* MAIN SECTION */
-
 main {
   padding: 1.5rem;
   min-height: calc(100vh - 64px);
@@ -69,11 +68,27 @@ main .icons i:hover {
   color: #eece1a;
 }
 
+.xoxo {
+  height: auto;
+  width: auto;
+}
+
 main#home {
   background-size: cover;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+
+/* If WebP is supported  */
+/* REMEMBER - '.webp' CLASS NEEDS TO GO FIRST FOR THIS TO WORK  */
+.webp main#home {
   background-image: url("../assets/img/background.webp");
+}
+
+/* Fallback if WebP is NOT supported  */
+.no-webp main#home {
+  background-image: url("../assets/backup/background.jpeg");
 }
 
 main#home::before {
@@ -230,10 +245,20 @@ body {
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../assets/img/portrait.webp");
+  /* background: url("../assets/img/portrait.webp"); */
   border-radius: 50%;
   border: solid 3px #eece1a;
 }
+
+/* If WebP is supported  */
+.webp .portrait {
+  background: url("../assets/img/portrait.webp");
+}
+
+.no-webp .portrait {
+  background: url("../assets/backup/portrait.jpg");
+}
+
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
@@ -352,6 +377,7 @@ header {
   border-radius: 50%;
   border: #eece1a 3px solid;
 }
+
 .about-info .bio {
   grid-area: bio;
   font-size: 1.3rem;
@@ -379,7 +405,12 @@ header {
 
 .highlightedProject img {
   width: 100%;
-  border: 3px #fff solid;
+  /* height: auto; */
+  padding: 3px;
+  border: 2px solid #ffff;
+  padding: 2px;
+  /* border: 2px solid #000000;
+  background-color: #dbdb30; */
 }
 
 .otherApps {
@@ -387,6 +418,10 @@ header {
   margin-bottom: 1rem;
   padding: 0.3rem;
   font-weight: bold;
+}
+
+.item-description {
+  font-size: 15px;
 }
 
 .projects {
@@ -397,7 +432,10 @@ header {
 
 .projects img {
   width: 100%;
-  border: 3px #fff solid;
+  /* padding: 3px;
+  background-color: #dbdb30; */
+  border: 2px solid #ffff;
+  padding: 1px;
 }
 
 .boxes {
@@ -420,6 +458,7 @@ header {
   background: #eece1a;
   color: #000;
 }
+
 .boxes div:hover span {
   color: #000;
 }
@@ -431,7 +470,14 @@ header {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-align: center;
+  transition: background-color 800ms ease-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .btn:hover,
 .btn-dark:hover,
 .btn-light:hover {
@@ -442,12 +488,24 @@ header {
 .btn-dark {
   background: black;
   color: #fff;
+  border: 2px solid #fff;
 }
 
 .btn-light {
   background: #c4c4c4;
-  color: #333;
+  color: #000000;
+  border: 2px solid #000;
 }
+
+.btn-dark:hover {
+  border: 2px solid #000;
+}
+
+.btn-light:hover {
+  border: 2px solid #fff;
+}
+
+/*  */
 
 .coming-soon section {
   height: 100%;
@@ -718,9 +776,21 @@ i {
     padding-top: 0px;
     padding: inherit;
   }
+  /* .openImageModal {
+    height: 333px;
+  } */
+}
+
+@media (orientation: landscape) and (max-width: 833px) {
+  .openImageModal {
+    height: 333px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .openImageModal {
+    height: 333px;
+  }
   main {
     align-items: center;
     text-align: center;
@@ -757,6 +827,16 @@ i {
     width: 150px;
     height: 150px;
   }
+
+  /* If WebP is supported  */
+  .webp .portrait {
+    background: url("../assets/img/portrait_small.webp");
+  }
+
+  .no-webp .portrait {
+    background: url("../assets/backup/portrait_small.jpg");
+  }
+
   .about-info {
     grid-template-areas:
       "bioimage"

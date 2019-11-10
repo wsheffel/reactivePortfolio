@@ -17,7 +17,8 @@ const Home = () => {
 
   return (
     <Fragment>
-      <main id="home" style={{ overflow: "hidden" }}>
+      <main id="home" className="lol">
+        {/* <div className="lol"></div> */}
         <div className="particles">
           <div className="parts"></div>
         </div>

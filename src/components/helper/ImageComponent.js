@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import Modal from "react-awesome-modal";
 
 const ImageComponent = ({ webp, jpg, title }) => {
-  const [isOpen, handleShowDialog] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Fragment>
       <picture>
@@ -15,14 +15,14 @@ const ImageComponent = ({ webp, jpg, title }) => {
           style={{ cursor: "pointer" }}
           src={jpg}
           alt={title}
-          onClick={() => handleShowDialog(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
         />
       </picture>
 
       <Modal
         visible={isOpen}
         effect="fadeInUp"
-        onClickAway={() => handleShowDialog(!isOpen)}
+        onClickAway={() => setIsOpen(!isOpen)}
       >
         <picture>
           <source srcSet={webp} type="image/webp" />
@@ -30,7 +30,7 @@ const ImageComponent = ({ webp, jpg, title }) => {
           <img
             className="openImageModal"
             src={jpg}
-            onClick={() => handleShowDialog(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)}
             alt={title}
           />
         </picture>
