@@ -155,16 +155,23 @@ const About = () => {
                 </i>
               </li>
               <li>
-                <b className="text-secondary">Bootstrap 4 </b>
-                <i>
-                  [great with <b>MaterializeCSS</b> too]
-                </i>
-              </li>
-              <li>
                 <b className="text-secondary">Sass </b>
                 <i>[when CSS is not enough]</i>
               </li>
+              <li>
+                <b className="text-secondary">GraphQL </b>
+                <i>[as an alternative to RESTful APIs]</i>
+              </li>
             </ul>
+            <hr />
+            <h4 style={{ marginTop: "0.2rem" }}>
+              <b className="text-secondary">Deployment:</b> I use various
+              platforms depending on the type and the size of the project:
+              <span className="diff-text">
+                {" "}
+                Heroku, Firebase, Netlify, App Engine, AWS, Google Cloud.
+              </span>
+            </h4>
           </div>
 
           <div className="job job-2 textShadow">
@@ -197,7 +204,7 @@ const About = () => {
                 <i>[as my API development testing tool]</i>
               </li>
               <li>
-                <b className="text-secondary">Loadash </b>
+                <b className="text-secondary">Lodash </b>
                 <i>[often required as my helper library]</i>
               </li>
               <li>
@@ -208,7 +215,21 @@ const About = () => {
                 <b className="text-secondary">EJS/ HBS </b>
                 <i>[when all focus is on the backend]</i>
               </li>
+              <li>
+                <b className="text-secondary">Bootstrap 4 </b>
+                <i>
+                  [great with <b>MaterializeCSS</b> too]
+                </i>
+              </li>
             </ul>
+            <hr />
+            as skills of a developer grow
+            <h4 style={{ marginTop: "0.2rem" }}>
+              As the skills and experience of a developer grow, so does the list
+              of tools used. It comes to a point where is hard to list
+              everything, but to me, the ones listed above are the most
+              relevant.
+            </h4>
           </div>
 
           <div
@@ -218,19 +239,35 @@ const About = () => {
             <h3 className="text-secondary specialFont bold">
               Other interesting facts:
             </h3>
-            <h5>
-              Technology that I'm currently most focused on:
-              <b className="text-secondary"> NodeJS.</b> <br />A language that
-              I'm familiar with, but don't often use:
-              <b className="text-secondary"> Java.</b> <br />
-              The language I would like to work with in the future:
-              <b className="text-secondary"> Python.</b>
-            </h5>
+            <h4>
+              <ul>
+                <li>
+                  Technology stack that I'm currently most focused on:{" "}
+                  <b className="text-secondary">MERN </b>{" "}
+                  <span aria-label="dash" role="img">
+                    ➖
+                  </span>
+                  <span style={{ fontSize: ".85rem" }} className="diff-text">
+                    [MongoDB, ExpressJS, ReactJS, NodeJS]
+                  </span>{" "}
+                </li>
+                <li>
+                  A programming language that I'm familiar with, but haven't
+                  used for a long time:
+                  <b className="text-secondary"> Java.</b>
+                </li>
+                <li>
+                  A programming language that I plan to learn and would like to
+                  work with in the future:{" "}
+                  <b className="text-secondary"> Python.</b>
+                </li>
+              </ul>
+            </h4>
             <hr />
-            <h5 style={{ marginTop: "0.2rem" }}>
+            <h4 style={{ marginTop: "0.2rem" }}>
               When I'm not coding, learning new programming skills, or advancing
               the existing ones, I'm doing one of the following:
-            </h5>
+            </h4>
             <ul>
               <li>
                 <i>Practising meditation & healthy lifestyle.</i>

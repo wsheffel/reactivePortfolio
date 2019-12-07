@@ -11,10 +11,11 @@ import HighlightedList from "./Highlighted/HighlightedList";
 import p1 from "../../assets/img/projects/p1.webp";
 import p2 from "../../assets/img/projects/p2.webp";
 import p3 from "../../assets/img/projects/p3.webp";
+import p4 from "../../assets/img/projects/p4.webp";
 import p5 from "../../assets/img/projects/p5.webp";
 import p6 from "../../assets/img/projects/p6.webp";
 import p7 from "../../assets/img/projects/p7.webp";
-import p8 from "../../assets/img/projects/p8.webp";
+// import p8 from "../../assets/img/projects/p8.webp";
 import p9 from "../../assets/img/projects/p9.webp";
 import p10 from "../../assets/img/projects/p10.webp";
 import p11 from "../../assets/img/projects/p11.webp";
@@ -31,10 +32,11 @@ import p18 from "../../assets/img/projects/p18.webp";
 import j1 from "../../assets/backup/p1.jpg";
 import j2 from "../../assets/backup/p2.jpg";
 import j3 from "../../assets/backup/p3.jpg";
+import j4 from "../../assets/backup/p4.jpg";
 import j5 from "../../assets/backup/p5.jpg";
 import j6 from "../../assets/backup/p6.jpg";
 import j7 from "../../assets/backup/p7.jpg";
-import j8 from "../../assets/backup/p8.jpg";
+// import j8 from "../../assets/backup/p8.jpg";
 import j9 from "../../assets/backup/p9.jpg";
 import j10 from "../../assets/backup/p10.jpg";
 import j11 from "../../assets/backup/p11.jpg";
@@ -147,7 +149,7 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="http://mini--stories.herokuapp.com/"
+              mainLink="https://mini--stories.herokuapp.com/"
               github="https://github.com/BiggaHD/miniStories"
               name="miniStories"
               description="A mini social network site with many extras 📗"
@@ -160,7 +162,7 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="http://idea--x.herokuapp.com/"
+              mainLink="https://idea--x.herokuapp.com"
               github="https://github.com/BiggaHD/IDEA_x"
               name="idea_X"
               description="Save ideas for your next coding project 💡"
@@ -186,14 +188,31 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="https://izen-250312.firebaseapp.com/"
+              mainLink="https://relax-i-zen.web.app/"
               github="https://github.com/BiggaHD/iZEN"
               name="iZEN"
-              description="Nice relaxing sounds & visuals to help you relax 🧘‍"
+              description="Nice relaxing sounds & visuals to help you calm down 🧘‍"
             />
           </div>
 
           <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent
+                webp={p4}
+                jpg={j4}
+                title="A small move from RESTful to GraphQL world"
+              />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://spacex-2020.herokuapp.com"
+              github="https://github.com/BiggaHD/spaceX-launches"
+              name="SpaceX Launcher"
+              description="An app that interacts with the official SpaceX API 🚀"
+            />
+          </div>
+
+          {/* <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
                 webp={p8}
@@ -208,7 +227,7 @@ const Work = () => {
               name="Reactive Clima"
               description="Five-day forecast of your favorite cities ⛅"
             />
-          </div>
+          </div> */}
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
@@ -237,10 +256,10 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="https://ng-recipes-f4e6c.firebaseapp.com/"
+              mainLink="https://balkan-recipes.firebaseapp.com/"
               github="https://github.com/BiggaHD/Balkan_Recipe_Book"
-              name="Balkan Recipe Book"
-              description="Collect recipes and organize shopping list 🥗"
+              name="Balkan Recipes"
+              description="Collect recipes and organize your shopping list 🥗"
             />
           </div>
 
@@ -284,7 +303,7 @@ const Work = () => {
             </Suspense>
 
             <WrokTemplate
-              mainLink="https://ng-sports-store.web.app"
+              mainLink="https://balkan-sport.web.app"
               github="https://github.com/BiggaHD/Balkan-Sports-Store"
               name="Balkan Sports Store"
               description="This was my first take on Angular 🏀"

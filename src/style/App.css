@@ -20,7 +20,7 @@ button:focus {
 }
 
 .secondStack li {
-  margin-bottom: 0.2rem;
+  /* margin-bottom: 0.2rem; */
 }
 
 .specialFont {
@@ -332,6 +332,10 @@ header {
 
 .extra-text {
   color: rgba(101, 255, 41, 0.603);
+}
+
+.dark-text {
+  color: #444;
 }
 
 .more {
