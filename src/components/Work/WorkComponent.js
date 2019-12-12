@@ -18,7 +18,7 @@ import p7 from "../../assets/img/projects/p7.webp";
 // import p8 from "../../assets/img/projects/p8.webp";
 import p9 from "../../assets/img/projects/p9.webp";
 import p10 from "../../assets/img/projects/p10.webp";
-import p11 from "../../assets/img/projects/p11.webp";
+// import p11 from "../../assets/img/projects/p11.webp";
 import p12 from "../../assets/img/projects/p12.webp";
 import p13 from "../../assets/img/projects/p13.webp";
 import p14 from "../../assets/img/projects/p14.webp";
@@ -26,6 +26,8 @@ import p15 from "../../assets/img/projects/p15.webp";
 import p16 from "../../assets/img/projects/p16.webp";
 import p17 from "../../assets/img/projects/p17.webp";
 import p18 from "../../assets/img/projects/p18.webp";
+import p19 from "../../assets/img/projects/p19.webp";
+import p20 from "../../assets/img/projects/p20.webp";
 
 // BACKUP IMAGES FOR OLDER BROWSER
 
@@ -39,7 +41,7 @@ import j7 from "../../assets/backup/p7.jpg";
 // import j8 from "../../assets/backup/p8.jpg";
 import j9 from "../../assets/backup/p9.jpg";
 import j10 from "../../assets/backup/p10.jpg";
-import j11 from "../../assets/backup/p11.jpg";
+// import j11 from "../../assets/backup/p11.jpg";
 import j12 from "../../assets/backup/p12.jpg";
 import j13 from "../../assets/backup/p13.jpg";
 import j14 from "../../assets/backup/p14.jpg";
@@ -47,6 +49,8 @@ import j15 from "../../assets/backup/p15.jpg";
 import j16 from "../../assets/backup/p16.jpg";
 import j17 from "../../assets/backup/p17.jpg";
 import j18 from "../../assets/backup/p18.jpg";
+import j19 from "../../assets/backup/p19.jpg";
+import j20 from "../../assets/backup/p20.jpg";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 
@@ -293,7 +297,7 @@ const Work = () => {
             />
           </div>
 
-          <div className="item">
+          {/* <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
                 webp={p11}
@@ -308,7 +312,7 @@ const Work = () => {
               name="Balkan Sports Store"
               description="This was my first take on Angular 🏀"
             />
-          </div>
+          </div> */}
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
@@ -354,6 +358,32 @@ const Work = () => {
               github="https://github.com/BiggaHD/bigga_file_uploads"
               name="Bigga File Uploads"
               description="2 way data transfer of various file types w/ preview 🌀"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent webp={p19} jpg={j19} title="Nexter website" />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://nexter-homes.web.app"
+              github="https://github.com/BiggaHD/nexter"
+              name="Nexter website"
+              description="A prototype made for a real estate agency 🏡"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent webp={p20} jpg={j20} title="Hotel XO website" />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://hotel-xo.firebaseapp.com"
+              github="https://github.com/BiggaHD/nexter"
+              name="Nexter website"
+              description="A prototype website made for a Hotel 🏨"
             />
           </div>
         </div>

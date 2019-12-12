@@ -223,7 +223,6 @@ const About = () => {
               </li>
             </ul>
             <hr />
-            as skills of a developer grow
             <h4 style={{ marginTop: "0.2rem" }}>
               As the skills and experience of a developer grow, so does the list
               of tools used. It comes to a point where is hard to list
