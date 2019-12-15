@@ -18,7 +18,7 @@ import p7 from "../../assets/img/projects/p7.webp";
 // import p8 from "../../assets/img/projects/p8.webp";
 import p9 from "../../assets/img/projects/p9.webp";
 import p10 from "../../assets/img/projects/p10.webp";
-// import p11 from "../../assets/img/projects/p11.webp";
+import p11 from "../../assets/img/projects/p11.webp";
 import p12 from "../../assets/img/projects/p12.webp";
 import p13 from "../../assets/img/projects/p13.webp";
 import p14 from "../../assets/img/projects/p14.webp";
@@ -41,7 +41,7 @@ import j7 from "../../assets/backup/p7.jpg";
 // import j8 from "../../assets/backup/p8.jpg";
 import j9 from "../../assets/backup/p9.jpg";
 import j10 from "../../assets/backup/p10.jpg";
-// import j11 from "../../assets/backup/p11.jpg";
+import j11 from "../../assets/backup/p11.jpg";
 import j12 from "../../assets/backup/p12.jpg";
 import j13 from "../../assets/backup/p13.jpg";
 import j14 from "../../assets/backup/p14.jpg";
@@ -286,19 +286,6 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
-              <ImageComponent webp={p18} jpg={j18} title="Example Website" />
-            </Suspense>
-
-            <WrokTemplate
-              mainLink="https://evolwe-example-site.firebaseapp.com/"
-              github="https://github.com/BiggaHD/evolWE"
-              name="evolWe 1.0"
-              description="An example of my client's page. I made a bunch of them 📱 🖥"
-            />
-          </div>
-
-          {/* <div className="item">
-            <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent
                 webp={p11}
                 jpg={j11}
@@ -310,9 +297,9 @@ const Work = () => {
               mainLink="https://balkan-sport.web.app"
               github="https://github.com/BiggaHD/Balkan-Sports-Store"
               name="Balkan Sports Store"
-              description="This was my first take on Angular 🏀"
+              description="eCommerce prototype app made with Angular 🏀"
             />
-          </div> */}
+          </div>
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
@@ -376,13 +363,26 @@ const Work = () => {
 
           <div className="item">
             <Suspense fallback={<div className="loader"></div>}>
+              <ImageComponent webp={p18} jpg={j18} title="Example Website" />
+            </Suspense>
+
+            <WrokTemplate
+              mainLink="https://evolwe-example-site.firebaseapp.com/"
+              github="https://github.com/BiggaHD/evolWE"
+              name="evolWe 2.0"
+              description="A prototype of a landing page made for a client ☮"
+            />
+          </div>
+
+          <div className="item">
+            <Suspense fallback={<div className="loader"></div>}>
               <ImageComponent webp={p20} jpg={j20} title="Hotel XO website" />
             </Suspense>
 
             <WrokTemplate
-              mainLink="https://hotel-xo.firebaseapp.com"
-              github="https://github.com/BiggaHD/nexter"
-              name="Nexter website"
+              mainLink="https://hotel-xo.web.app"
+              github="https://github.com/BiggaHD/hotel-xo"
+              name="Hotel XO"
               description="A prototype website made for a Hotel 🏨"
             />
           </div>

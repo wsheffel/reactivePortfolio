@@ -17,8 +17,7 @@ const Home = () => {
 
   return (
     <Fragment>
-      <main id="home" className="lol">
-        {/* <div className="lol"></div> */}
+      <main id="home">
         <div className="particles">
           <div className="parts"></div>
         </div>

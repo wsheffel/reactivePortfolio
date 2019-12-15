@@ -57,21 +57,25 @@ main .icons i:hover {
 }
 
 main#home {
-  background-size: cover;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-size: 100% 100%;
 }
 
 /* If WebP is supported  */
 /* REMEMBER - '.webp' CLASS NEEDS TO GO FIRST FOR THIS TO WORK  */
 .webp main#home {
   background-image: url("../assets/img/background.webp");
+  /* background-image: url("../assets/backup/xo.png"); */
 }
 
 /* Fallback if WebP is NOT supported  */
 .no-webp main#home {
-  background-image: url("../assets/backup/background.jpeg");
+  background-image: url("../assets/backup/background.jpg");
 }
 
 main#home::before {
@@ -83,7 +87,8 @@ main#home::before {
   left: 0;
   right: 0;
   opacity: 0.6;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: inset 0 0 5em 2em #000;
 }
 
 main#home h1 {
@@ -94,6 +99,14 @@ main#home h1 {
 li a:hover {
   color: #eece1a;
 }
+
+/* main#about {
+  background-image: url("../assets//img/lines_1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: left;
+  position: relative;
+} */
 
 .hobby {
   overflow: hidden;
@@ -213,7 +226,6 @@ body {
 .menu-nav ul li {
   list-style-type: none;
 }
-
 .menu-nav.show {
   transform: translate3d(0, 0, 0);
 }
@@ -861,6 +873,11 @@ i {
 }
 
 @media screen and (max-width: 612px) {
+  main#home {
+    background-size: auto 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
   main {
     padding: 2rem;
   }

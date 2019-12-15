@@ -247,7 +247,8 @@ const About = () => {
                     ➖
                   </span>
                   <span style={{ fontSize: ".85rem" }} className="diff-text">
-                    [MongoDB, ExpressJS, ReactJS, NodeJS]
+                    {" "}
+                  [MongoDB, ExpressJS, ReactJS, NodeJS]
                   </span>{" "}
                 </li>
                 <li>
