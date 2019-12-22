@@ -747,7 +747,7 @@ i {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1171px) {
+@media screen and (min-width: 825px) and (max-width: 1171px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -757,11 +757,10 @@ i {
   #home {
     text-align: center;
   }
-  .highlighetList {
+  /* .highlighetList {
     list-style-type: none;
-    padding-top: 0px;
     padding: inherit;
-  }
+  } */
   /* .openImageModal {
     height: 333px;
   } */
@@ -769,10 +768,13 @@ i {
 
 /* iPhone 11 Pro and below */
 @media screen and (max-width: 824px) {
+  .highlightedProject {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .about-info .bio-image {
     margin: auto;
   }
-
   .openImageModal {
     height: 333px;
   }
@@ -793,7 +795,6 @@ i {
     width: 100%;
     min-height: 0;
   }
-
   ul.menu-nav.show,
   div.menu-branding.show {
     transform: translate3d(0, 0, 0);
@@ -834,15 +835,21 @@ i {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  .highlightedProject {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   nav a {
     padding: 2rem;
   }
   ul li {
     text-align: left;
+  }
+  .job ul li {
+    justify-items: center;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .highlightedProject {
+    grid-template-columns: 1fr;
   }
 }
 
