@@ -8,49 +8,46 @@ import HighlightedHeader from "./Highlighted/HighlightedHeader";
 import HighlightedDescription from "./Highlighted/HighlightedDescription";
 import HighlightedList from "./Highlighted/HighlightedList";
 
-import p1 from "../../assets/img/projects/p1.webp";
-import p2 from "../../assets/img/projects/p2.webp";
-import p3 from "../../assets/img/projects/p3.webp";
-import p4 from "../../assets/img/projects/p4.webp";
-import p5 from "../../assets/img/projects/p5.webp";
-import p6 from "../../assets/img/projects/p6.webp";
-import p7 from "../../assets/img/projects/p7.webp";
-// import p8 from "../../assets/img/projects/p8.webp";
-import p9 from "../../assets/img/projects/p9.webp";
-import p10 from "../../assets/img/projects/p10.webp";
-import p11 from "../../assets/img/projects/p11.webp";
-import p12 from "../../assets/img/projects/p12.webp";
-import p13 from "../../assets/img/projects/p13.webp";
-import p14 from "../../assets/img/projects/p14.webp";
-import p15 from "../../assets/img/projects/p15.webp";
-import p16 from "../../assets/img/projects/p16.webp";
-import p17 from "../../assets/img/projects/p17.webp";
-import p18 from "../../assets/img/projects/p18.webp";
-import p19 from "../../assets/img/projects/p19.webp";
-import p20 from "../../assets/img/projects/p20.webp";
-
-// BACKUP IMAGES FOR OLDER BROWSER
-
-import j1 from "../../assets/backup/p1.jpg";
-import j2 from "../../assets/backup/p2.jpg";
-import j3 from "../../assets/backup/p3.jpg";
-import j4 from "../../assets/backup/p4.jpg";
-import j5 from "../../assets/backup/p5.jpg";
-import j6 from "../../assets/backup/p6.jpg";
-import j7 from "../../assets/backup/p7.jpg";
-// import j8 from "../../assets/backup/p8.jpg";
-import j9 from "../../assets/backup/p9.jpg";
-import j10 from "../../assets/backup/p10.jpg";
-import j11 from "../../assets/backup/p11.jpg";
-import j12 from "../../assets/backup/p12.jpg";
-import j13 from "../../assets/backup/p13.jpg";
-import j14 from "../../assets/backup/p14.jpg";
-import j15 from "../../assets/backup/p15.jpg";
-import j16 from "../../assets/backup/p16.jpg";
-import j17 from "../../assets/backup/p17.jpg";
-import j18 from "../../assets/backup/p18.jpg";
-import j19 from "../../assets/backup/p19.jpg";
-import j20 from "../../assets/backup/p20.jpg";
+import {
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7,
+  p9,
+  p10,
+  p11,
+  p12,
+  p13,
+  p14,
+  p15,
+  p16,
+  p17,
+  p18,
+  p19,
+  p20,
+  j1,
+  j2,
+  j3,
+  j4,
+  j5,
+  j6,
+  j7,
+  j9,
+  j10,
+  j11,
+  j12,
+  j13,
+  j14,
+  j15,
+  j16,
+  j17,
+  j18,
+  j19,
+  j20
+} from "../helper/imageIndex";
 
 const ImageComponent = React.lazy(() => import("../helper/ImageComponent"));
 

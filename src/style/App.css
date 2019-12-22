@@ -17,10 +17,7 @@ button:focus {
 
 .textShadow {
   text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.726);
-}
-
-.secondStack li {
-  /* margin-bottom: 0.2rem; */
+  margin: 0.5rem auto;
 }
 
 .specialFont {
@@ -38,7 +35,7 @@ button:focus {
 /* MAIN SECTION */
 main {
   padding: 1.5rem;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 2.5rem); /* minus the footer */
 }
 
 main .icons {
@@ -57,9 +54,6 @@ main .icons i:hover {
 }
 
 main#home {
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -70,7 +64,6 @@ main#home {
 /* REMEMBER - '.webp' CLASS NEEDS TO GO FIRST FOR THIS TO WORK  */
 .webp main#home {
   background-image: url("../assets/img/background.webp");
-  /* background-image: url("../assets/backup/xo.png"); */
 }
 
 /* Fallback if WebP is NOT supported  */
@@ -99,14 +92,6 @@ main#home h1 {
 li a:hover {
   color: #eece1a;
 }
-
-/* main#about {
-  background-image: url("../assets//img/lines_1.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left;
-  position: relative;
-} */
 
 .hobby {
   overflow: hidden;
@@ -782,13 +767,12 @@ i {
   } */
 }
 
-@media (orientation: landscape) and (max-width: 833px) {
-  .openImageModal {
-    height: 333px;
+/* iPhone 11 Pro and below */
+@media screen and (max-width: 824px) {
+  .about-info .bio-image {
+    margin: auto;
   }
-}
 
-@media screen and (max-width: 767px) {
   .openImageModal {
     height: 333px;
   }
@@ -851,8 +835,9 @@ i {
     grid-template-columns: repeat(2, 1fr);
   }
   .highlightedProject {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   nav a {
     padding: 2rem;
   }
@@ -861,7 +846,7 @@ i {
   }
 }
 
-@media (max-width: 767px) and (orientation: landscape) {
+@media (max-width: 824px) and (orientation: landscape) {
   .menu .nav-link {
     font-size: 1.4rem;
     padding: 0.2rem;
@@ -869,6 +854,16 @@ i {
   }
   .about-info .bio-image {
     margin: auto;
+  }
+  .job ul li {
+    justify-items: center;
+    display: grid;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 833px) {
+  .openImageModal {
+    height: 333px;
   }
 }
 
@@ -899,11 +894,7 @@ i {
   }
   .menu .nav-link {
     font-size: 1.4rem;
-    /* font-family: "Canzil", cursive; */
-    /* padding: 0.2rem;
-    margin: auto; */
   }
-
   .projects {
     grid-template-columns: 1fr;
   }
@@ -927,6 +918,18 @@ i {
   }
   .about-info .bio-image {
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .firstStack li i,
+  .secondStack li i,
+  .thirdStack li i {
+    display: block;
+    font-size: 0.85rem;
+  }
+  .thirdStack li span.diff-text {
+    display: inline-block;
   }
 }
 

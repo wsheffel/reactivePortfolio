@@ -122,25 +122,25 @@ const About = () => {
             <ul className="firstStack">
               <li>
                 <b className="text-secondary">HTML5 </b>
-                <i>[for a semi to fully dynamic sites/ apps]</i>
+                <i>[w/ the newest standards & approaches]</i>
               </li>
               <li>
                 <b className="text-secondary">CSS3 </b>
-                <i>[w/ the newest standards and approaches]</i>
+                <i>[Grid, Flexbox, Animations, Sass]</i>
               </li>
               <li>
                 <b className="text-secondary">JavaScript </b>
                 <i>
-                  [Proficient with vanilla <b>ES6</b> and above]
+                  [proficient with vanilla <b>ES6</b> and above]
                 </i>
               </li>
               <li>
-                <b className="text-secondary">React 16 </b>
-                <i>[incl. everything that works great with it]</i>
+                <b className="text-secondary">React 16+ </b>
+                <i>[familiar with its entire ecosystem]</i>
               </li>
               <li>
                 <b className="text-secondary">Redux </b>
-                <i>[for better state management]</i>
+                <i>[my essential tool for state management]</i>
               </li>
               <li>
                 <b className="text-secondary">NodeJS </b>
@@ -155,8 +155,10 @@ const About = () => {
                 </i>
               </li>
               <li>
-                <b className="text-secondary">Sass </b>
-                <i>[when CSS is not enough]</i>
+                <b className="text-secondary">Bootstrap 4 </b>
+                <i>
+                  [great with <b>Materialize CSS</b> too]
+                </i>
               </li>
               <li>
                 <b className="text-secondary">GraphQL </b>
@@ -215,12 +217,6 @@ const About = () => {
                 <b className="text-secondary">EJS/ HBS </b>
                 <i>[when all focus is on the backend]</i>
               </li>
-              <li>
-                <b className="text-secondary">Bootstrap 4 </b>
-                <i>
-                  [great with <b>MaterializeCSS</b> too]
-                </i>
-              </li>
             </ul>
             <hr />
             <h4 style={{ marginTop: "0.2rem" }}>
@@ -239,16 +235,19 @@ const About = () => {
               Other interesting facts:
             </h3>
             <h4>
-              <ul>
+              <ul className="thirdStack">
                 <li>
                   Technology stack that I'm currently most focused on:{" "}
                   <b className="text-secondary">MERN </b>{" "}
-                  <span aria-label="dash" role="img">
-                    ➖
-                  </span>
-                  <span style={{ fontSize: ".85rem" }} className="diff-text">
+                  <span
+                    style={{ fontSize: ".85rem" }}
+                    className="diff-text"
+                    aria-label="dash"
+                    role="img"
+                    id="mern"
+                  >
                     {" "}
-                  [MongoDB, ExpressJS, ReactJS, NodeJS]
+                    ➖ [MongoDB, ExpressJS, ReactJS, NodeJS]
                   </span>{" "}
                 </li>
                 <li>
@@ -276,7 +275,7 @@ const About = () => {
                 <i>Extensively listening to audiobooks.</i>
               </li>
               <li>
-                <i>Reading articles & studies about A.I.</i>
+                <i>Reading articles about A.I.</i>
               </li>
               <li>
                 <i>Spending quality family time.</i>
