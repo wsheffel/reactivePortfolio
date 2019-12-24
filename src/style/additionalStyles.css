@@ -404,8 +404,8 @@ section {
   /* top: -35px;
   right: -35px; */
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  width: 1.5rem;
+  height: 1.5rem;
   overflow: hidden;
   border: none;
   background: transparent;
