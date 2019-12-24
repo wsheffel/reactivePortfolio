@@ -4,10 +4,7 @@ import Local_Setup from "../../../documents/Local_Setup.pdf";
 const HighlightedList = ({ openVideo }) => {
   return (
     <Fragment>
-      <ul
-        className="item highlighetList"
-        style={{ listStyleType: "none", marginTop: 0, paddingTop: 0 }}
-      >
+      <ul className="highlightedList">
         <li>
           <b className="text-secondary textShadow">
             Some of the technologies used in this app include:
@@ -15,10 +12,10 @@ const HighlightedList = ({ openVideo }) => {
         </li>
         <hr />
         <li>
-          <b>HTML5</b> & <b>CSS3</b> <i>(On a more advance level)</i>
+          <b>HTML5</b> & <b>CSS3</b> <i>(on a more advance level)</i>
         </li>
         <li>
-          <b>React 16</b> <i>(with Context API & React-Router 4)</i>
+          <b>ReactJS</b> <i>(with many related NPM packages)</i>
         </li>
         <li>
           <b>Redux</b> (<i>for 90% of the state management)</i>
@@ -33,10 +30,10 @@ const HighlightedList = ({ openVideo }) => {
           <b>MongoDB</b> <i>(for monthly local storage)</i>
         </li>
         <li>
-          <b>Bootstrap 4</b> <i>(but mostly pure CSS3)</i>
+          <b>Bootstrap</b> <i>(but mostly pure CSS3)</i>
         </li>
         <li>
-          Google OAuth2, Drive & Spreadsheets APIs
+          Google OAuth2, Drive & Spreadsheets APIs <br />
           <i>(for OAuth, sync, and remote storage)</i>
         </li>
         <li>
@@ -44,30 +41,31 @@ const HighlightedList = ({ openVideo }) => {
         </li>
         <li>... and so much more</li>
         <hr />
+        <div className="highlightedList__icons">
+          <li style={{ listStyleType: "none", paddingBottom: ".5rem" }}>
+            <a
+              href="#!"
+              id="video"
+              className="icons textShadow"
+              onClick={openVideo}
+              aria-label="Open the video demonstration"
+            >
+              <i className="fab fa-youtube fa-2x" />
+              Watch Video Preview
+            </a>
+          </li>
 
-        <li style={{ listStyleType: "none", paddingBottom: ".5rem" }}>
-          <a
-            href="#!"
-            id="video"
-            className="icons textShadow"
-            onClick={openVideo}
-            aria-label="Open the video demonstration"
-          >
-            <i className="fab fa-youtube fa-2x" />
-            Watch Video Preview
-          </a>
-        </li>
-
-        <li style={{ listStyleType: "none" }}>
-          <a
-            href={Local_Setup}
-            className="icons textShadow"
-            download="Local_Setup"
-            aria-label="Download the instructions"
-          >
-            <i className="fas fa-download fa-2x" /> Download Instructions
-          </a>
-        </li>
+          <li style={{ listStyleType: "none" }}>
+            <a
+              href={Local_Setup}
+              className="icons textShadow"
+              download="Local_Setup"
+              aria-label="Download the instructions"
+            >
+              <i className="fas fa-download fa-2x" /> Download Instructions
+            </a>
+          </li>
+        </div>
       </ul>
     </Fragment>
   );

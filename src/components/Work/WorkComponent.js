@@ -67,6 +67,7 @@ const Work = () => {
         </h1>
 
         <ModalVideo
+          ratio="21:9"
           channel="youtube"
           isOpen={videoOpen}
           videoId="5pUm2DWUgPM"

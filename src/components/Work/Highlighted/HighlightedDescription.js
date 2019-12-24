@@ -3,7 +3,7 @@ import React from "react";
 const HighlightedDescription = () => {
   return (
     <div className="item-description">
-      <h3 className="text-secondary textShadow">Highlighted project:</h3>
+      <h3 className="text-secondary textShadow">Project description:</h3>
 
       <p>
         It's an EMS software - [Employee management system] that can help
